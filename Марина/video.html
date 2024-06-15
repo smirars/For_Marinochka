@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles1.css">
+        <link href="https://vjs.zencdn.net/7.17.0/video-js.css" rel="stylesheet" />
+        <style>
+            .vjs-choice-buttons {
+                display: none;
+                position: absolute;
+                bottom: 20px;
+                left: 50%;
+                transform: translateX(-50%);
+                z-index: 1000;
+            }
+    
+            
+            .choiceButton {
+                margin: 0 10px;
+                padding: 10px 20px;
+                font-size: 16px;
+            }
+            
+            #videoContainer {
+              display: flex;
+              justify-content: center;
+            
+            }
+        </style>
+    </head>
+    <body>
+        <div id="videoContainer" width="100%" >
+            <video id="videoPlayer" class="video-js vjs-default-skin" controls width="1200px" preload="auto" data-setup='{}'>
+                <source src="1.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="vjs-choice-buttons" id="choiceButtons">
+                <button class="choiceButton" onclick="loadVideo('2.mp4')">Video 2</button>
+                <button class="choiceButton" onclick="loadVideo('3.mp4')">Video 3</button>
+            </div>
+        </div>
+        <!--
+        <div class = 'videos' id = "video-container">
+            <video id="video" class="first-video" src = '1.mp4'>
+            </video>
+            <button class = 'first' onclick = changeVideo()>
+                click me!
+            </button>
+            <div class="controls">
+                <button class="playBtn">Старт</button>
+                <button class="pauseBtn">Стоп</button>
+            </div>
+        </div>
+    --> 
+    <script src="https://vjs.zencdn.net/7.17.0/video.js"></script>
+    <script src="marina.js"></script>
+    <script>
+        const player = videojs('videoPlayer');
+        const choiceButtons = document.getElementById('choiceButtons');
+    
+        player.on('timeupdate', () => {
+            if (player.currentTime() >= player.duration() - 1) {
+                choiceButtons.style.display = 'block';
+            } else {
+                choiceButtons.style.display = 'none';
+            }
+        });
+    
+        function loadVideo(videoSrc) {
+            player.src({ type: 'video/mp4', src: videoSrc });
+            player.play();
+            choiceButtons.style.display = 'none';
+        }
+    
+        function adjustButtonPosition() {
+            const isFullScreen = document.fullscreenElement || document.webkitFullscreenElement || document.mozFullScreenElement || document.msFullscreenElement;
+            choiceButtons.style.position = isFullScreen ? 'fixed' : 'absolute';
+        }
+    
+        document.addEventListener('fullscreenchange', adjustButtonPosition);
+        document.addEventListener('webkitfullscreenchange', adjustButtonPosition);
+        document.addEventListener('mozfullscreenchange', adjustButtonPosition);
+        document.addEventListener('msfullscreenchange', adjustButtonPosition);
+    
+        window.addEventListener('beforeunload', () => {
+            document.removeEventListener('fullscreenchange', adjustButtonPosition);
+            document.removeEventListener('webkitfullscreenchange', adjustButtonPosition);
+            document.removeEventListener('mozfullscreenchange', adjustButtonPosition);
+            document.removeEventListener('msfullscreenchange', adjustButtonPosition);
+        });
+    
+        // Adding custom component for choice buttons
+        videojs.registerComponent('ChoiceButtons', videojs.extend(videojs.getComponent('Component'), {
+            constructor: function () {
+                videojs.getComponent('Component').apply(this, arguments);
+                this.addClass('vjs-choice-buttons');
+            },
+            createEl: function () {
+                return choiceButtons;
+            }
+        }));
+    
+        player.addChild('ChoiceButtons');
+    </script>
+    </body>
+</html>
