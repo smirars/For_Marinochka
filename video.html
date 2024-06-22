@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles1.css">
+        <link href="https://vjs.zencdn.net/7.17.0/video-js.css" rel="stylesheet" />
+        <style>
+            .vjs-choice-buttons {
+                display: none;
+                position: absolute;
+                bottom: 20px;
+                left: 50%;
+                transform: translateX(-50%);
+                z-index: 1000;
+            }
+    
+            
+            .choiceButton {
+                margin: 0 10px;
+                padding: 10px 20px;
+                font-size: 16px;
+                background-color: black;
+                color: white;
+                width: 100px;
+                height: 70px;
+                border: 5px solid black;
+            }
+            
+            #videoContainer {
+              display: flex;
+              justify-content: center;
+            
+            }
+
+            .button {
+              background-color: black;
+              margin-right: 40px;
+
+            }
+
+            .buttons {
+              display: flex;
+              justify-content: space-between; 
+            }
+        </style>
+    </head>
+    <body>
+        <div id="videoContainer" width="100%" >
+            <video id="videoPlayer" class="video-js vjs-default-skin" controls width="1200px" preload="auto" data-setup='{}'>
+                <source src="сон_начало.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="vjs-choice-buttons" id="choiceButtons">
+                <div class="buttons" id="addButton">
+                    <div class="button">
+                        <button class="choiceButton" onclick="loadStartVideo(0, 'сон_съебалась.mp4')">Не пустить</button>
+                    </div>
+                    <div class="button">
+                        <button class="choiceButton" onclick="loadStartVideo(0, 'сон_открою.mp4')">Пустить</button>
+                    </div>
+                    <div class="button">
+                        <button class="choiceButton" onclick="loadStartVideo(0, 'сон_яэтоты.mp4')">Я это ты</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--
+        <div class = 'videos' id = "video-container">
+            <video id="video" class="first-video" src = '1.mp4'>
+            </video>
+            <button class = 'first' onclick = changeVideo()>
+                click me!
+            </button>
+            <div class="controls">
+                <button class="playBtn">Старт</button>
+                <button class="pauseBtn">Стоп</button>
+            </div>
+        </div>
+    --> 
+    <script src="https://vjs.zencdn.net/7.17.0/video.js"></script>
+    <script src="marina.js"></script>
+    <script>
+        let withArsen = false;
+        let withArine = false;
+        const player = videojs('videoPlayer');
+        const choiceButtons = document.getElementById('choiceButtons');
+        const videoPlayer = document.getElementById('videoPlayer');
+        let overlay = null;
+        
+        
+        player.on('timeupdate', () => {
+            if (player.currentTime() >= player.duration() - 1) {
+                choiceButtons.style.display = 'block';
+                /* if (!overlay) {
+                overlay = document.createElement('div');
+                overlay.style.position = 'absolute';
+                overlay.style.top = '0';
+                overlay.style.left = '0';
+                overlay.style.width = '100%';
+                overlay.style.height = '100%';
+                overlay.style.backgroundColor = 'black';
+                overlay.style.opacity = 0.9; // Прозрачность
+                videoPlayer.appendChild(overlay);
+                } */
+            } else {
+                choiceButtons.style.display = 'none';
+            }
+        });
+        
+        const videoRowStart = [
+           {  name: 0,
+              buttons: 2,
+              srcs: {0: 'сбор_все_неловкое_молчание.mp4',
+                     1: 'сбор_арсен.mp4'
+              },
+              buttons_names: {
+                     0: 'показания соседки',
+                     1: 'спящий арсен'         
+              }
+            },
+
+            { name: 1,
+              buttons: 2,
+              srcs: {0: 'сбор_все_неловкое_молчание.mp4',
+                     1: 'спор_арина.mp4'
+              },
+              buttons_names: {
+                     0: 'родственники',
+                     1: 'блокировка'         
+              }
+            },
+
+            { name: 2,
+              buttons: 2,
+              srcs: {0: 'свои_подарки_девочки.mp4',
+                     1: 'свои_подарки_мальчики.mp4'
+              },
+              buttons_names: {
+                     0: 'девочки',
+                     1: 'мальчики'         
+              }
+            },
+
+            { name: 2,
+              buttons: 2,
+              srcs: {0: 'свои_подарки_девочки.mp4',
+                     1: 'свои_подарки_мальчики.mp4'
+              },
+              buttons_names: {
+                     0: 'выходим за тортом',
+                     1: 'московская правда'         
+              }
+            }
+        ]
+
+        function loadStartVideo(n, videoSrc) {
+            let addButton = document.getElementById('addButton');
+            addButton.innerHTML = '';
+            player.src({ type: 'video/mp4', src: videoSrc });
+            player.play();
+            /* if (overlay) {
+                videoPlayer.removeChild(overlay);
+                overlay = null;
+            } */
+            
+            choiceButtons.style.display = 'none';
+            for (let i = 0; i < 2; i++) {
+                let element = document.createElement('div');
+                let newButton = document.createElement('button');
+                element.classList.add('button');
+                
+                newButton.classList.add('choiceButton');
+                newButton.textContent = videoRowStart[n]['buttons_names'][i];
+                newButton.addEventListener('click', () => {
+                    if (n === 0) {
+                      if (i === 0) {
+                        loadVideoAll(0, videoRowStart[n]['srcs'][i]);
+                      } else if (i === 1) {
+                        loadVideoArsen(0, videoRowStart[n]['srcs'][i]);
+                      }
+                    } else if (n === 1) {
+                      if  (i === 0) {
+                        loadVideoRelatives(0, videoRowStart[n]['srcs'][i]);
+                      } else if (i === 1) {
+                        loadVideoArine(0, videoRowStart[n]['srcs'][i]);
+                      }
+                    } else if (n === 2) {
+                        if  (i === 0) {
+                        loadGirlsIdeas(0, videoRowStart[n]['srcs'][i]);
+                      } else if (i === 1) {
+                        loadBoysIdeas(0, videoRowStart[n]['srcs'][i]);
+                      }  
+                    } else if (n === 3 && withArsen && withArine) {
+                        player.src({ type: 'video/mp4', src: '2.mp4' });
+                        player.play();
+                    } else if (n === 3 && withArsen && !withArine) {
+                        player.src({ type: 'video/mp4', src: '3.mp4' });
+                        player.play();
+                    } else if (n === 3 && !withArsen && withArine) {
+                        player.src({ type: 'video/mp4', src: '1.mp4' });
+                        player.play();
+                    } 
+                    
+                    
+                    
+                });
+                element.appendChild(newButton);
+                addButton.appendChild(element);
+            }
+        }
+
+        const videoRowArine = [
+           {  name: 0,
+              buttons: 2,
+              srcs: {0: 'спор_арина_против.mp4',
+                     1: 'спор_арина_согласна.mp4',
+              },
+              buttons_names: {
+                     0: 'не согласиться',
+                     1: 'согласиться'         
+              }
+            }
+        ]
+
+        function loadVideoArine(n, videoSrc) {
+            
+            let addButton = document.getElementById('addButton');
+            addButton.innerHTML = '';
+            player.src({ type: 'video/mp4', src: videoSrc });
+            player.play();
+            /* if (overlay) {
+                videoPlayer.removeChild(overlay);
+                overlay = null;
+            } */
+            let queue = videoRowArine[n];
+            
+            choiceButtons.style.display = 'none';
+            for (let i = 0; i < videoRowArine[n]['buttons']; i++) {
+                let element = document.createElement('div');
+                let newButton = document.createElement('button');
+                element.classList.add('button');
+                
+                newButton.classList.add('choiceButton');
+                newButton.textContent = videoRowArine[n]['buttons_names'][i];
+                newButton.addEventListener('click', () => {
+                    if (i === 0) {
+                        withArine = true;
+                        loadNextStep(2, videoRowArine[n]['srcs'][i], '1.mp4', withArsen, withArine);
+                    } else {
+                        loadNextStep(2, videoRowArine[n]['srcs'][i], '1.mp4', withArsen, withArine);  
+                    }
+                    
+                });
+                element.appendChild(newButton);
+                addButton.appendChild(element);
+            }
+        }
+
+        const videoRowRelatives = [
+           {  name: 0,
+              buttons: 3,
+              srcs: {0: 'сбор_все_анекдот_драконы.mp4',
+                     1: 'сбор_все_анекдот_космос.mp4',
+                     2: 'сбор_все_анекдот_черепаха.mp4'
+              },
+              buttons_names: {
+                     0: 'брат',
+                     1: 'мама',
+                     2: 'сестра'         
+              }
+            }
+        ]
+
+        function loadVideoRelatives(n, videoSrc) {
+            let addButton = document.getElementById('addButton');
+            addButton.innerHTML = '';
+            player.src({ type: 'video/mp4', src: videoSrc });
+            player.play();
+            /* if (overlay) {
+                videoPlayer.removeChild(overlay);
+                overlay = null;
+            } */
+            let queue = videoRowRelatives[n];
+            
+            choiceButtons.style.display = 'none';
+            for (let i = 0; i < videoRowRelatives[n]['buttons']; i++) {
+                let element = document.createElement('div');
+                let newButton = document.createElement('button');
+                element.classList.add('button');
+                
+                newButton.classList.add('choiceButton');
+                newButton.textContent = videoRowRelatives[n]['buttons_names'][i];
+                newButton.addEventListener('click', () => {
+                    
+                    loadNextStep(2, videoRowRelatives[n]['srcs'][i], '1.mp4', withArsen, withArine);
+                    
+                });
+                element.appendChild(newButton);
+                addButton.appendChild(element);
+            }
+        }
+        
+        const videoRowAll = [
+           {  name: 0,
+              buttons: 3,
+              srcs: {0: 'сбор_все_анекдот_драконы.mp4',
+                     1: 'сбор_все_анекдот_космос.mp4',
+                     2: 'сбор_все_анекдот_черепаха.mp4'
+              },
+              buttons_names: {
+                     0: 'драконы',
+                     1: 'космос',
+                     2: 'черепаха'         
+              }
+            }
+        ]
+
+        function loadVideoAll(n, videoSrc) {
+            let addButton = document.getElementById('addButton');
+            addButton.innerHTML = '';
+            player.src({ type: 'video/mp4', src: videoSrc });
+            player.play();
+            /* if (overlay) {
+                videoPlayer.removeChild(overlay);
+                overlay = null;
+            } */
+            let queue = videoRowAll[n];
+            
+            choiceButtons.style.display = 'none';
+            for (let i = 0; i < videoRowAll[n]['buttons']; i++) {
+                let element = document.createElement('div');
+                let newButton = document.createElement('button');
+                element.classList.add('button');
+                
+                newButton.classList.add('choiceButton');
+                newButton.textContent = videoRowAll[n]['buttons_names'][i];
+                newButton.addEventListener('click', () => {
+                    
+                    loadNextStep(1, videoRowAll[n]['srcs'][i], '1.mp4', withArsen, withArine);
+                    
+                });
+                element.appendChild(newButton);
+                addButton.appendChild(element);
+            }
+        }
+
+        const videoRowArsen = [
+           {  name: 0,
+              buttons: 3,
+              srcs: {0: 'сбор_арсен_мысль.mp4',
+                     1: 'сбор_арсен_деб.mp4',
+                     2: 'сбор_арсен_указать.mp4'
+              },
+              buttons_names: {
+                     0: 'продолжить думать',
+                     1: 'сделать деб',
+                     2: 'указать остальным'         
+              }
+            },
+            {  name: 1,
+              buttons: 3,
+              srcs: {0: 'сбор_арсен_мысль_голуби.mp4',
+                     1: 'сбор_арсен_мысль_скуф.mp4',
+                     2: 'сбор_арсен_мысль_хасбик.mp4'
+              },
+              buttons_names: {
+                     0: 'голуби',
+                     1: 'скуфство',
+                     2: 'хасбулла'         
+              }
+            },
+            {  name: 2,
+              buttons: 3,
+              srcs: {0: 'сбор_арсен_деб_игнор.mp4',
+                     1: 'сбор_арсен_деб_поддержал.mp4',
+                     2: 'сбор_арсен_деб_попустил.mp4'
+              },
+              buttons_names: {
+                     0: 'проигнорить',
+                     1: 'поддержать',
+                     2: 'наругать'         
+              }
+            },
+            {  name: 3,
+              buttons: 3,
+              srcs: {0: 'сбор_арсен_арестант.mp4',
+                     1: 'сбор_арсен_вежливо_вошел.mp4',
+                     2: 'сбор_арсен_упал.mp4'
+              },
+              buttons_names: {
+                     0: 'арестант',
+                     1: 'вежливо',
+                     2: 'упасть'         
+              }
+            },
+            {  name: 4,
+              buttons: 3,
+              srcs: {0: 'сбор_арсен_ответить.mp4',
+                     1: 'сбор_арсен_схавал.mp4',
+                     2: 'сбор_арсен_извиняется.mp4'
+              },
+              buttons_names: {
+                     0: 'ответить',
+                     1: 'схавать',
+                     2: 'извиниться'         
+              }
+            }
+            
+
+    ];  
+
+        function loadNextStep(n, videoSrc, videoSrcNext, withArsen, withArine) {
+            console.log(withArsen);
+            console.log(withArine);
+            let addButton = document.getElementById('addButton');
+            addButton.innerHTML = '';
+            player.src({ type: 'video/mp4', src: videoSrc });
+            player.play();
+            let element = document.createElement('div');
+            let newButton = document.createElement('button');
+            element.classList.add('button');
+            console.log();    
+            newButton.classList.add('choiceButton');
+            newButton.textContent = 'К следующему этапу';
+            newButton.addEventListener('click', () => {
+                    loadStartVideo(n, videoSrcNext);
+                });
+            element.appendChild(newButton);
+            addButton.appendChild(element);
+
+        }    
+
+        function loadVideoArsen(n, videoSrc) {
+            let addButton = document.getElementById('addButton');
+            addButton.innerHTML = '';
+            player.src({ type: 'video/mp4', src: videoSrc });
+            player.play();
+            /* if (overlay) {
+                videoPlayer.removeChild(overlay);
+                overlay = null;
+            } */
+            let queue = videoRowArsen[n];
+            choiceButtons.style.display = 'none';
+            for (let i = 0; i < videoRowArsen[n]['buttons']; i++) {
+                let element = document.createElement('div');
+                let newButton = document.createElement('button');
+                element.classList.add('button');
+                newButton.classList.add('choiceButton');
+                newButton.textContent = videoRowArsen[n]['buttons_names'][i];
+                newButton.addEventListener('click', () => {
+                    if (n === 0) {
+                      loadVideoArsen(i+1, videoRowArsen[n]['srcs'][i]);
+                    } else if (n === 3) {
+                        loadVideoArsen(4, videoRowArsen[n]['srcs'][i]);    
+                    } else if (n === 4 && i === 0) {
+                        withArsen = true;
+                        loadNextStep(1, videoRowArsen[n]['srcs'][i], '1.mp4', withArsen, withArine);
+                    } else {
+                        loadNextStep(1, videoRowArsen[n]['srcs'][i], '1.mp4', withArsen, withArine);
+                    } 
+                });
+                element.appendChild(newButton);
+                addButton.appendChild(element);
+            }
+        }
+        
+        const videoRowGirls = [
+           {  name: 0,
+              buttons: 3,
+              srcs: {0: 'свои_подарки_чай.mp4',
+                     1: 'свои_подарки_погода.mp4',
+                     2: 'свои_подарки_хвастается.mp4'
+              },
+              buttons_names: {
+                     0: 'попросить чай',
+                     1: 'заговорить о погоде',
+                     2: 'похвастаться'         
+              }
+            },
+            {  name: 1,
+              buttons: 2,
+              srcs: {0: 'свои_подарки_тфест.mp4',
+                     1: 'свои_подарки_ублюдки.mp4'
+              },
+              buttons_names: {
+                     0: 'тифест',
+                     1: 'ублюдки'        
+              }
+            }
+
+    ]; 
+
+        function loadGirlsIdeas(n, videoSrc) {
+            let addButton = document.getElementById('addButton');
+            addButton.innerHTML = '';
+            player.src({ type: 'video/mp4', src: videoSrc });
+            player.play();
+            /* if (overlay) {
+                videoPlayer.removeChild(overlay);
+                overlay = null;
+            } */
+            let queue = videoRowArsen[n];
+            choiceButtons.style.display = 'none';
+            for (let i = 0; i < videoRowGirls[n]['buttons']; i++) {
+                let element = document.createElement('div');
+                let newButton = document.createElement('button');
+                element.classList.add('button');
+                newButton.classList.add('choiceButton');
+                newButton.textContent = videoRowGirls[n]['buttons_names'][i];
+                newButton.addEventListener('click', () => {
+                    if (n === 0) {
+                      loadGirlsIdeas(1, videoRowGirls[n]['srcs'][i]);
+                    } else {
+                        loadNextStep(3, videoRowGirls[n]['srcs'][i], '1.mp4', withArsen, withArine);
+                    } 
+                });
+                element.appendChild(newButton);
+                addButton.appendChild(element);
+            }
+        }
+
+        const videoRowBoys = [
+           {  name: 0,
+              buttons: 3,
+              srcs: {0: 'свои_подарки_как_дела.mp4',
+                     1: 'свои_подарки_как_вставать.mp4',
+                     2: 'свои_подарки_доебался.mp4'
+              },
+              buttons_names: {
+                     0: 'как дела',
+                     1: 'как вставать',
+                     2: 'доебаться'         
+              }
+            },
+            {  name: 1,
+              buttons: 2,
+              srcs: {0: 'свои_подарки_маски.mp4',
+                     1: 'свои_подарки_пират.mp4'
+              },
+              buttons_names: {
+                     0: 'маски',
+                     1: 'пират'        
+              }
+            }
+
+    ]; 
+
+        function loadBoysIdeas(n, videoSrc) {
+            let addButton = document.getElementById('addButton');
+            addButton.innerHTML = '';
+            player.src({ type: 'video/mp4', src: videoSrc });
+            player.play();
+            /* if (overlay) {
+                videoPlayer.removeChild(overlay);
+                overlay = null;
+            } */
+            let queue = videoRowArsen[n];
+            choiceButtons.style.display = 'none';
+            for (let i = 0; i < videoRowBoys[n]['buttons']; i++) {
+                let element = document.createElement('div');
+                let newButton = document.createElement('button');
+                element.classList.add('button');
+                newButton.classList.add('choiceButton');
+                newButton.textContent = videoRowBoys[n]['buttons_names'][i];
+                newButton.addEventListener('click', () => {
+                    if (n === 0) {
+                      loadBoysIdeas(1, videoRowBoys[n]['srcs'][i]);
+                    } else {
+                        loadNextStep(3, videoRowBoys[n]['srcs'][i], '1.mp4', withArsen, withArine);
+                    } 
+                });
+                element.appendChild(newButton);
+                addButton.appendChild(element);
+            }
+        }
+    
+        function adjustButtonPosition() {
+            const isFullScreen = document.fullscreenElement || document.webkitFullscreenElement || document.mozFullScreenElement || document.msFullscreenElement;
+            choiceButtons.style.position = isFullScreen ? 'fixed' : 'absolute';
+        }
+    
+        document.addEventListener('fullscreenchange', adjustButtonPosition);
+        document.addEventListener('webkitfullscreenchange', adjustButtonPosition);
+        document.addEventListener('mozfullscreenchange', adjustButtonPosition);
+        document.addEventListener('msfullscreenchange', adjustButtonPosition);
+    
+        window.addEventListener('beforeunload', () => {
+            document.removeEventListener('fullscreenchange', adjustButtonPosition);
+            document.removeEventListener('webkitfullscreenchange', adjustButtonPosition);
+            document.removeEventListener('mozfullscreenchange', adjustButtonPosition);
+            document.removeEventListener('msfullscreenchange', adjustButtonPosition);
+        });
+    
+        // Adding custom component for choice buttons
+        videojs.registerComponent('ChoiceButtons', videojs.extend(videojs.getComponent('Component'), {
+            constructor: function () {
+                videojs.getComponent('Component').apply(this, arguments);
+                this.addClass('vjs-choice-buttons');
+            },
+            createEl: function () {
+                return choiceButtons;
+            }
+        }));
+    
+        player.addChild('ChoiceButtons');
+    </script>
+    </body>
+</html>
