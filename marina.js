@@ -33,9 +33,11 @@
 const configName = "config.json";
 let config = null;
 
-const init = () => {
-  console.log("INIT");
+init();
 
+
+function init() {
+  console.log("INIT");
 
   fetch(configName)
             .then(response => {
@@ -45,16 +47,46 @@ const init = () => {
                 return response.json();
             })
             .then(data => {
-                // Теперь data является объектом JavaScript
-                
-                console.log(data);
                 config = data;
+                nextStep(config.initial_step)
             })
             .catch(error => {
                 console.error('There has been a problem with your fetch operation:', error);
             });
+          
+}
 
+function getStep(step_id) {
+  if (!step_id) {
+    console.error("nextStep: invalid step_id", step_id)
+  }
+
+  return config[step_id]
+}
+
+function nextStep(step_id) {
+  let step = getStep(step_id)
+
+  // video.source = step.src;
+
+  // if(step.choices) {
+  //   video.nextStep = ""
+  //   overlay.clean()
+  //   overlay.title = step.title
+  //   step.choices.forEach(choice => {
+  //     overlay.addButton(choice)
+  //   });
+
+  // } else
+  //   video.nextStep = step.nextStep
+
+  // video.play()
 
 }
 
-init();
+
+
+
+
+
+
