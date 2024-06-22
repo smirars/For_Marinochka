@@ -1,0 +1,25 @@
+{
+    "initial_step": "_1",
+    "_1": {
+        "src": "hello.mp4",
+        "title": "",
+        "choices": [
+            {
+                "next_step": "_2",
+                "text": "",
+                "pic_src": ""
+            },
+            {
+                "next_step": "_3",
+                "text": "",
+                "pic_src": ""
+            },
+            {
+                "next_step": "_4",
+                "text": "",
+                "pic_src": ""
+            }
+        ],
+        "next_step": ""
+    }
+}

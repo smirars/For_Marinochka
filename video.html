@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" href="styles1.css">
+        <!-- <link rel="stylesheet" href="styles.css"> -->
         <link href="https://vjs.zencdn.net/7.17.0/video-js.css" rel="stylesheet" />
         <style>
             .vjs-choice-buttons {
@@ -46,12 +46,12 @@
     <body>
         <div id="videoContainer" width="100%" >
             <video id="videoPlayer" class="video-js vjs-default-skin" controls width="1200px" preload="auto" data-setup='{}'>
-                <source src="сон_начало.mp4" type="video/mp4">
+                <!-- <source src="сон_начало.mp4" type="video/mp4"> -->
                 Your browser does not support the video tag.
             </video>
             <div class="vjs-choice-buttons" id="choiceButtons">
                 <div class="buttons" id="addButton">
-                    <div class="button">
+                    <!-- <div class="button">
                         <button class="choiceButton" onclick="loadStartVideo(0, 'сон_съебалась.mp4')">Не пустить</button>
                     </div>
                     <div class="button">
@@ -59,7 +59,7 @@
                     </div>
                     <div class="button">
                         <button class="choiceButton" onclick="loadStartVideo(0, 'сон_яэтоты.mp4')">Я это ты</button>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
@@ -77,8 +77,9 @@
         </div>
     --> 
     <script src="https://vjs.zencdn.net/7.17.0/video.js"></script>
-    <script src="marina.js"></script>
-    <script>
+    <!-- <script src="marina.js"></script> -->
+    <!-- <script>
+        // return;  // TODO
         let withArsen = false;
         let withArine = false;
         const player = videojs('videoPlayer');
@@ -602,6 +603,6 @@
         }));
     
         player.addChild('ChoiceButtons');
-    </script>
+    </script> -->
     </body>
 </html>
