@@ -2,8 +2,8 @@ header div {
     text-align: center;
     font-family: "Pacifico", cursive;
     font-size: 40px;
-    color: white;
-    text-shadow: 2px 2px 7px #38F5F5;
+    color: black;
+    text-shadow: 2px 2px 2px #38F5F5;
 }
 
 .pacifico-regular {
@@ -13,7 +13,7 @@ header div {
 }
   
 header {
-    background-image: linear-gradient(to right bottom, #474747, #ddd);
+    /* background-image: linear-gradient(to right bottom, #474747, #ddd); */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -108,4 +108,9 @@ img {
     left: auto;
     width: 100%;
     height: 800px;
+  }
+
+  .image-container {
+    display: flex;
+    justify-content: center;
   }
