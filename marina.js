@@ -76,10 +76,9 @@ const overlayController = {
         const img = document.createElement('img');
         button.style.width = '20%'
         button.style.verticalAlign = 'middle'
-        if (src === "")
+        if (!src)
             button.textContent = text;
         else {
-            console.log("image", src)
             img.src = src;
             button.appendChild(img);
         }
