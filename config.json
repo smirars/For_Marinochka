@@ -5,21 +5,21 @@
         "title": "Выберите действие",
         "choices": [
             {
-                "next_step": "_2",
+                "next_step": "_1",
                 "text": "FGkjshfkajh ",
                 "pic_src": ""
             },
             {
-                "next_step": "_3",
+                "next_step": "_1",
                 "text": "2",
                 "pic_src": "1.jpg"
             },
             {
-                "next_step": "_4",
+                "next_step": "_1",
                 "text": "3",
                 "pic_src": "2.jpg"
             }
         ],
-        "next_step": "_1"
+        "next_step": ""
     }
 }
