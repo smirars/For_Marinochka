@@ -6,6 +6,7 @@ const stepController = {
     getStep: function(step_id) {
         if (!step_id )
           console.error("nextStep: invalid step_id", step_id)
+        
     
         let step = this.config[step_id]
     
@@ -53,6 +54,7 @@ const stepController = {
         .catch(error => {
             console.error('There has been a problem with your fetch operation:', error);
         });
+
     }
 }
 
@@ -72,6 +74,8 @@ const overlayController = {
     addButton: function(step_id, text, src) {
         const button = document.createElement('button');
         const img = document.createElement('img');
+        button.style.width = '20%'
+        button.style.verticalAlign = 'middle'
         if (src === "")
             button.textContent = text;
         else {
