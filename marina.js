@@ -79,6 +79,7 @@ const overlayController = {
         if (src === "")
             button.textContent = text;
         else {
+            console.log("image", src)
             img.src = src;
             button.appendChild(img);
         }
@@ -143,32 +144,26 @@ const videoController = {
     
     playVideo: function() {
         this.player.load();
-        this.player.ready(function() {
-            // player.muted(true);
-            videoController.player.play().then(() => {
-            //    console.log('Video is playing');
-            }).catch(error => {
-                // тут возникает ошибка при автоматическом запуске видео
-                // console.error('Failed to play video:', error);
+
+        this.player.addEventListener('canplay', () => {
+            this.player.play().catch(error => {
+                // Ошибка при автоматическом запуске видео
+                console.error('Failed to play video:', error);
             });
         });
-
-        document.addEventListener('keydown', function(evt) {
-          if (evt.code === "Space") {
-            if (player.play()) {
-                player.pause()
-            } else
-            player.play()
-          }
-        })
     }
 }
 
+document.addEventListener('keydown', (evt) => {
+    if (evt.code === "Space") {
+        evt.preventDefault();
+        if (videoController.player.paused())
+            videoController.player.play(); 
+        else
+            videoController.player.pause();
+    }
+});
+
+
 stepController.init();
-
-
-
-
-
-
 
