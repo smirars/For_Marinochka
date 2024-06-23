@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- <link rel="stylesheet" href="styles.css"> -->
+        <link href="https://vjs.zencdn.net/7.17.0/video-js.css" rel="stylesheet" />
+        <style>
+            .buttonContainer {
+                display: none;
+                position: absolute;
+                bottom: 20px;
+                left: 50%;
+                transform: translateX(-50%);
+                z-index: 1000;
+            }
+            .button {
+                margin: 0 10px;
+                padding: 10px 20px;
+                font-size: 16px;
+                background-color: black;
+                color: white;
+                width: 100px;
+                height: 70px;
+                border: 5px solid black;
+            }
+            #videoContainer {
+                display: flex;
+                justify-content: center;
+            }
+
+            .button {
+                background-color: black;
+                margin-right: 40px;
+            }
+            video {
+                width: 100%;
+                height: auto;
+            }
+            .overlay {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: rgba(0, 0, 0, 0.5);
+                color: #fff;
+                flex-direction: column;
+                opacity: 0;
+                transition: opacity 0.5s;
+                pointer-events: none;
+            }
+            .overlay.fade-in {
+                opacity: 1;
+                pointer-events: auto;
+            }
+            .overlay.fade-out {
+                opacity: 0;
+                transition: none;
+            }
+            .overlay.active {
+                opacity: 1;
+                pointer-events: auto;
+            }
+            .overlay button {
+                margin: 5px;
+                padding: 10px;
+                font-size: 16px;
+                cursor: pointer;
+                background: none;
+                border: none;
+            }
+            .overlay img {
+                width: 100px;
+                height: 100px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="videoContainer" width="100%" >
+            <video id="videoPlayer" class="video-js vjs-default-skin" controls width="1200px" preload="auto" data-setup='{}'>
+                Your browser does not support the video tag.
+            </video>
+            <div class="overlay" id="overlay">
+                <h2 id="overlayTitle"></h2>
+                <div id="buttonContainer">
+                </div>
+            </div>
+        </div>
+    <script src="https://vjs.zencdn.net/7.17.0/video.js"></script>
+    <script src="marina.js"></script>
+    </body>
+</html>

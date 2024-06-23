@@ -1,0 +1,25 @@
+{
+    "initial_step": "_1",
+    "_1": {
+        "src": "https://raw.githubusercontent.com/smirars/For_Marinochka/config-refactoring/37mb.mp4",
+        "title": "Выберите действие",
+        "choices": [
+            {
+                "next_step": "_1",
+                "text": "FGkjshfkajh ",
+                "pic_src": ""
+            },
+            {
+                "next_step": "_1",
+                "text": "2",
+                "pic_src": "1.jpg"
+            },
+            {
+                "next_step": "_1",
+                "text": "3",
+                "pic_src": "2.jpg"
+            }
+        ],
+        "next_step": ""
+    }
+}
