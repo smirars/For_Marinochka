@@ -1,7 +1,7 @@
 {
     "initial_step": "_1",
     "_1": {
-        "src": "https://raw.githubusercontent.com/smirars/For_Marinochka/config-refactoring/37mb.mp4",
+        "src": "resources/37mb.mp4",
         "title": "Выберите действие",
         "choices": [
             {
