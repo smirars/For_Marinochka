@@ -1,45 +1,75 @@
 {
-    "initial_step": "_1",
-    "_1": {
+    "initial_step": "_dream_start",
+    "_dream_start": {
         "src": "resources/dream/сон_начало.mp4",
         "title": "Выберите действие",
         "choices": [
             {
-                "next_step": "_2",
+                "next_step": "_dream_open",
                 "text": "Открыть",
                 "pic_src": ""
             },
             {
-                "next_step": "_3",
+                "next_step": "_dream_not_open",
                 "text": "Не открыть",
                 "pic_src": "resources/1.jpg"
             },
             {
-                "next_step": "_4",
+                "next_step": "_dream_its_me",
                 "text": "Охуеть, чтоооо????",
                 "pic_src": ""
             }
         ],
         "next_step": ""
     },
-    "_2": {
+    "_dream_open": {
         "src": "resources/dream/сон_открою.mp4",
-        "title": "Выберите действие",
+        "title": "Выберите карточку",
         "choices": [
+            {
+                "next_step": "_gether_all",
+                "text": "Показания соседки",
+                "pic_src": ""
+            },
+            {
+                "next_step": "_gether_arsen",
+                "text": "Спящий Арсен",
+                "pic_src": ""
+            }
         ],
         "next_step": ""
     },
-    "_3": {
+    "_dream_not_open": {
         "src": "resources/dream/сон_съебалась.mp4",
-        "title": "Выберите действие",
+        "title": "Выберите карточку",
         "choices": [
+            {
+                "next_step": "_gether_all",
+                "text": "Показания соседки",
+                "pic_src": ""
+            },
+            {
+                "next_step": "_gether_arsen",
+                "text": "Спящий Арсен",
+                "pic_src": ""
+            }
         ],
         "next_step": ""
     },
-    "_4": {
+    "_dream_its_me": {
         "src": "resources/dream/сон_яэтоты.mp4",
-        "title": "Выберите действие",
+        "title": "Выберите карточку",
         "choices": [
+            {
+                "next_step": "_gether_all",
+                "text": "Показания соседки",
+                "pic_src": ""
+            },
+            {
+                "next_step": "_gether_arsen",
+                "text": "Спящий Арсен",
+                "pic_src": ""
+            }
         ],
         "next_step": ""
     }
