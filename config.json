@@ -2,24 +2,24 @@
     "initial_step": "_1",
     "_1": {
         "src": "hello.mp4",
-        "title": "",
+        "title": "Выберите действие",
         "choices": [
             {
                 "next_step": "_2",
-                "text": "",
+                "text": "FGkjshfkajh ",
                 "pic_src": ""
             },
             {
                 "next_step": "_3",
-                "text": "",
-                "pic_src": ""
+                "text": "2",
+                "pic_src": "1.jpg"
             },
             {
                 "next_step": "_4",
-                "text": "",
-                "pic_src": ""
+                "text": "3",
+                "pic_src": "2.jpg"
             }
         ],
-        "next_step": ""
+        "next_step": "_1"
     }
 }
