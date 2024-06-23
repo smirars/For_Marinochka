@@ -74,7 +74,6 @@ const overlayController = {
     addButton: function(step_id, text, src) {
         const button = document.createElement('button');
         const img = document.createElement('img');
-        button.style.width = '20%'
         button.style.verticalAlign = 'middle'
         if (!src)
             button.textContent = text;
@@ -144,10 +143,13 @@ const videoController = {
     playVideo: function() {
         this.player.load();
 
-        this.player.addEventListener('canplay', () => {
-            this.player.play().catch(error => {
-                // Ошибка при автоматическом запуске видео
-                console.error('Failed to play video:', error);
+        this.player.ready(function() { 
+            // player.muted(true); 
+            videoController.player.play().then(() => { 
+            //    console.log('Video is playing'); 
+            }).catch(error => { 
+                // тут возникает ошибка при автоматическом запуске видео 
+                // console.error('Failed to play video:', error); 
             });
         });
     }

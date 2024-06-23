@@ -1,45 +1,92 @@
 {
-    "initial_step": "_1",
-    "_1": {
+    "initial_step": "dream_start",
+    "dream_start": {
         "src": "resources/dream/сон_начало.mp4",
-        "title": "Выберите действие",
+        "title": "Как поступить Ксюше?",
         "choices": [
             {
-                "next_step": "_2",
+                "next_step": "dream_open",
                 "text": "Открыть",
                 "pic_src": ""
             },
             {
-                "next_step": "_3",
+                "next_step": "dream_not_open",
                 "text": "Не открыть",
-                "pic_src": "resources/1.jpg"
+                "pic_src": ""
             },
             {
-                "next_step": "_4",
+                "next_step": "dream_its_me",
                 "text": "Охуеть, чтоооо????",
                 "pic_src": ""
             }
         ],
         "next_step": ""
     },
-    "_2": {
+    "dream_open": {
         "src": "resources/dream/сон_открою.mp4",
-        "title": "Выберите действие",
+        "title": "Выберите карточку: она определит, как прошел сбор ребят",
         "choices": [
+            {
+                "next_step": "gether_all",
+                "text": "Показания соседки",
+                "pic_src": "resources/cards/карточка_показания_соседки.jpg"
+            },
+            {
+                "next_step": "gether_arsen",
+                "text": "Спящий Арсен",
+                "pic_src": "resources/cards/карточка_арсен_спящий.jpg"
+            }
         ],
         "next_step": ""
     },
-    "_3": {
+    "dream_not_open": {
         "src": "resources/dream/сон_съебалась.mp4",
-        "title": "Выберите действие",
+        "title": "Выберите карточку: она определит, как прошел сбор ребят",
         "choices": [
+            {
+                "next_step": "gether_all",
+                "text": "Показания соседки",
+                "pic_src": "resources/cards/карточка_показания_соседки.jpg"
+            },
+            {
+                "next_step": "gether_arsen",
+                "text": "Спящий Арсен",
+                "pic_src": "resources/cards/карточка_арсен_спящий.jpg"
+            }
         ],
         "next_step": ""
     },
-    "_4": {
+    "dream_its_me": {
         "src": "resources/dream/сон_яэтоты.mp4",
-        "title": "Выберите действие",
+        "title": "Выберите карточку: она определит, как прошел сбор ребят",
         "choices": [
+            {
+                "next_step": "gether_all",
+                "text": "Показания соседки",
+                "pic_src": "resources/cards/карточка_показания_соседки.jpg"
+            },
+            {
+                "next_step": "gether_arsen",
+                "text": "Спящий Арсен",
+                "pic_src": "resources/cards/карточка_арсен_спящий.jpg"
+            }
+        ],
+        "next_step": ""
+    },
+    "gether_all": {
+        "src": "resources/gether/сбор_все_неловкое_молчание.mp4",
+        "title": "Выберите карточку",
+        "choices": [
+            {
+                "next_step": "gether_all",
+                "text": "Показания соседки",
+                "pic_src": ""
+            },
+            {
+                "next_step": "gether_arsen",
+                "text": "Спящий Арсен",
+                "pic_src": ""
+            }
         ],
         "next_step": ""
     }
