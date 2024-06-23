@@ -72,9 +72,13 @@ const overlayController = {
     addButton: function(step_id, text, src) {
         const button = document.createElement('button');
         const img = document.createElement('img');
-        img.src = src;
-        img.alt = text;
-        button.appendChild(img);
+        if (src === "")
+            button.textContent = text;
+        else {
+            img.src = src;
+            button.appendChild(img);
+        }
+        
         button.onclick = () => {
             console.info("next step clicked:", step_id)
             stepController.nextStep(step_id)
@@ -144,6 +148,15 @@ const videoController = {
                 // console.error('Failed to play video:', error);
             });
         });
+
+        document.addEventListener('keydown', function(evt) {
+          if (evt.code === "Space") {
+            if (player.play()) {
+                player.pause()
+            } else
+            player.play()
+          }
+        })
     }
 }
 

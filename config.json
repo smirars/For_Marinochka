@@ -12,11 +12,11 @@
             {
                 "next_step": "_3",
                 "text": "Не открыть",
-                "pic_src": ""
+                "pic_src": "resources/1.jpg"
             },
             {
                 "next_step": "_4",
-                "text": "Охуеть, что",
+                "text": "Охуеть, чтоооо????",
                 "pic_src": ""
             }
         ],
