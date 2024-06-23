@@ -18,23 +18,16 @@ const stepController = {
     nextStep: function(step_id, is_initial_step = false) {
         let step = this.getStep(step_id)
     
-        if(step.choices.length > 0) {
-    
-            if (step.next_step)
-                console.warn("WARNING: choices and next_step are both not empty! step_id:", step_id)
-    
-            videoController.setAutoNextStep("")
-            overlayController.clean()
-            overlayController.setTitle(step.title)
-    
-            step.choices.forEach(choice => {
-                overlayController.addButton(choice.next_step, choice.text, choice.pic_src)
-            });
-    
-        } else
-            videoController.setAutoNextStep(step.next_step)
-    
+        if (step.choices.length > 0 && step.next_step)
+            console.warn("WARNING: choices and next_step are both not empty! step_id:", step_id)
 
+        
+        videoController.setAutoNextStep(step.next_step)
+        overlayController.clean()
+        overlayController.setTitle(step.title)
+        step.choices.forEach(choice => {
+            overlayController.addButton(choice.next_step, choice.text, choice.pic_src)
+        });
     
         videoController.setVideoSrc(step.src)
     
