@@ -130,7 +130,7 @@ const videoController = {
     }, 
 
     setVideoSrc: function(src) {
-        this.player.src({ type: 'video/mp4', src: src });
+        this.player.src({ type: 'application/x-mpegURL', src: src });
     },
     
     playVideo: function() {
