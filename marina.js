@@ -29,8 +29,7 @@ const stepController = {
             overlayController.addButton(choice.next_step, choice.text, choice.pic_src)
         });
     
-        // videoController.setVideoSrc(step.src)
-        videoController.setVideoSrc("resources/37mb.mp4")
+        videoController.setVideoSrc(step.src)
     
         // Первое видео не запустится автоматически
         if (!is_initial_step)
