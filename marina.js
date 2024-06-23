@@ -6,6 +6,7 @@ const stepController = {
     getStep: function(step_id) {
         if (!step_id )
           console.error("nextStep: invalid step_id", step_id)
+        
     
         let step = this.config[step_id]
     
@@ -53,6 +54,7 @@ const stepController = {
         .catch(error => {
             console.error('There has been a problem with your fetch operation:', error);
         });
+
     }
 }
 
@@ -72,9 +74,15 @@ const overlayController = {
     addButton: function(step_id, text, src) {
         const button = document.createElement('button');
         const img = document.createElement('img');
-        img.src = src;
-        img.alt = text;
-        button.appendChild(img);
+        button.style.width = '20%'
+        button.style.verticalAlign = 'middle'
+        if (!src)
+            button.textContent = text;
+        else {
+            img.src = src;
+            button.appendChild(img);
+        }
+        
         button.onclick = () => {
             console.info("next step clicked:", step_id)
             stepController.nextStep(step_id)
@@ -135,23 +143,26 @@ const videoController = {
     
     playVideo: function() {
         this.player.load();
-        this.player.ready(function() {
-            // player.muted(true);
-            videoController.player.play().then(() => {
-            //    console.log('Video is playing');
-            }).catch(error => {
-                // тут возникает ошибка при автоматическом запуске видео
-                // console.error('Failed to play video:', error);
+
+        this.player.addEventListener('canplay', () => {
+            this.player.play().catch(error => {
+                // Ошибка при автоматическом запуске видео
+                console.error('Failed to play video:', error);
             });
         });
     }
 }
 
+document.addEventListener('keydown', (evt) => {
+    if (evt.code === "Space") {
+        evt.preventDefault();
+        if (videoController.player.paused())
+            videoController.player.play(); 
+        else
+            videoController.player.pause();
+    }
+});
+
+
 stepController.init();
-
-
-
-
-
-
 
