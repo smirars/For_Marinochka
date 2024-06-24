@@ -599,7 +599,7 @@
         ],
         "next_step": ""
     },
-    "discussion_arine_conf": {
+    "discussion_arine_conflict": {
         "src": "resources/discussion/спор_арина.mp4",
         "title": "Что сделать Арине?",
         "choices": [
