@@ -75,17 +75,2028 @@
     },
     "gether_all": {
         "src": "resources/gether/сбор_все_неловкое_молчание.mp4",
-        "title": "Выберите карточку",
+        "title": "Какой анекдот рассказать Паше?",
         "choices": [
             {
-                "next_step": "gether_all",
-                "text": "Показания соседки",
+                "next_step": "gether_joke_dragons",
+                "text": "Анекдот про драконов",
                 "pic_src": ""
             },
             {
-                "next_step": "gether_arsen",
-                "text": "Спящий Арсен",
+                "next_step": "gether_joke_space",
+                "text": "Анекдот про космос",
                 "pic_src": ""
+            },
+            {
+                "next_step": "gether_joke_turtle",
+                "text": "Анекдот про черепаха",
+                "pic_src": ""
+            }
+        ],
+        "next_step": ""
+    },
+    "gether_joke_dragons": {
+        "src": "resources/gether/сбор_все_анекдот_драконы.mp4",
+        "title": "Выберите карточку: она определит, поучаствуют ли родственники в поздравлении",
+        "choices": [
+            {
+                "next_step": "discussion_yes",
+                "text": "Поздравление родственников",
+                "pic_src": "resources/cards/карточка_родственники.jpg"
+            },
+            {
+                "next_step": "discussion_arine_conflict",
+                "text": "Блокировка ксюши",
+                "pic_src": "resources/cards/блок_итог.jpg"
+            }
+        ],
+        "next_step": ""
+    },
+    "gether_joke_space": {
+        "src": "resources/gether/сбор_все_анекдот_космос.mp4",
+        "title": "Выберите карточку: она определит, поучаствуют ли родственники в поздравлении",
+        "choices": [
+            {
+                "next_step": "discussion_yes",
+                "text": "Поздравление родственников",
+                "pic_src": "resources/cards/карточка_родственники.jpg"
+            },
+            {
+                "next_step": "discussion_arine_conflict",
+                "text": "Блокировка ксюши",
+                "pic_src": "resources/cards/блок_итог.jpg"
+            }
+        ],
+        "next_step": ""
+    },
+    "gether_joke_turtle": {
+        "src": "resources/gether/сбор_все_анекдот_черепаха.mp4",
+        "title": "Выберите карточку: она определит, поучаствуют ли родственники в поздравлении",
+        "choices": [
+            {
+                "next_step": "discussion_yes",
+                "text": "Поздравление родственников",
+                "pic_src": "resources/cards/карточка_родственники.jpg"
+            },
+            {
+                "next_step": "discussion_arine_conflict",
+                "text": "Блокировка ксюши",
+                "pic_src": "resources/cards/блок_итог.jpg"
+            }
+        ],
+        "next_step": ""
+    },
+    "gether_arsen": {
+        "src": "resources/gether/сбор_арсен.mp4",
+        "title": "Что сделать Паше?",
+        "choices": [
+            {
+                "next_step": "gether_thought",
+                "text": "Продолжить думать",
+                "pic_src": ""
+            },
+            {
+                "next_step": "gether_deb",
+                "text": "Сделать деб",
+                "pic_src": ""
+            },
+            {
+                "next_step": "gether_attention",
+                "text": "Посетовать на то, что Арсен не пришёл",
+                "pic_src": ""
+            }
+        ],
+        "next_step": ""
+    },
+    "gether_thought": {
+        "src": "resources/gether/сбор_арсен_мысль.mp4",
+        "title": "Какую мысль Паши показать?",
+        "choices": [
+            {
+                "next_step": "gether_thought_golub",
+                "text": "Мысль про голубей",
+                "pic_src": ""
+            },
+            {
+                "next_step": "gether_thought_skuf",
+                "text": "Мысль про скуфство",
+                "pic_src": ""
+            },
+            {
+                "next_step": "gether_thought_hasbik",
+                "text": "Мысль про хасбика",
+                "pic_src": ""
+            }
+        ],
+        "next_step": ""
+    },
+    "gether_thought_golub": {
+        "src": "resources/gether/сбор_арсен_мысль_голуби.mp4",
+        "title": "Выберите карточку: она определит, поучаствуют ли родственники в поздравлении",
+        "choices": [
+            {
+                "next_step": "discussion_yes",
+                "text": "Поздравление родственников",
+                "pic_src": "resources/cards/карточка_родственники.jpg"
+            },
+            {
+                "next_step": "discussion_arine_conflict",
+                "text": "Блокировка ксюши",
+                "pic_src": "resources/cards/блок_итог.jpg"
+            }
+        ],
+        "next_step": ""
+    },
+    "gether_thought_skuf": {
+        "src": "resources/gether/сбор_арсен_мысль_скуф.mp4",
+        "title": "Выберите карточку: она определит, поучаствуют ли родственники в поздравлении",
+        "choices": [
+            {
+                "next_step": "discussion_yes",
+                "text": "Поздравление родственников",
+                "pic_src": "resources/cards/карточка_родственники.jpg"
+            },
+            {
+                "next_step": "discussion_arine_conflict",
+                "text": "Блокировка ксюши",
+                "pic_src": "resources/cards/блок_итог.jpg"
+            }
+        ],
+        "next_step": ""
+    },
+    "gether_thought_hasbik": {
+        "src": "resources/gether/сбор_арсен_мысль_хасбик.mp4",
+        "title": "Выберите карточку: она определит, поучаствуют ли родственники в поздравлении",
+        "choices": [
+            {
+                "next_step": "discussion_yes",
+                "text": "Поздравление родственников",
+                "pic_src": "resources/cards/карточка_родственники.jpg"
+            },
+            {
+                "next_step": "discussion_arine_conflict",
+                "text": "Блокировка ксюши",
+                "pic_src": "resources/cards/блок_итог.jpg"
+            }
+        ],
+        "next_step": ""
+    },
+    "gether_deb": {
+        "src": "resources/gether/сбор_арсен_деб.mp4",
+        "title": "Как отреагировать Игнату?",
+        "choices": [
+            {
+                "next_step": "gether_deb_ignore",
+                "text": "Проигнорировать",
+                "pic_src": ""
+            },
+            {
+                "next_step": "gether_deb_too",
+                "text": "Тоже сделать деб",
+                "pic_src": ""
+            },
+            {
+                "next_step": "gether_deb_agressive",
+                "text": "Наехать на пашу",
+                "pic_src": ""
+            }
+        ],
+        "next_step": ""
+    },
+    "gether_deb_ignore": {
+        "src": "resources/gether/сбор_арсен_деб_игнор.mp4",
+        "title": "Выберите карточку: она определит, поучаствуют ли родственники в поздравлении",
+        "choices": [
+            {
+                "next_step": "discussion_yes",
+                "text": "Поздравление родственников",
+                "pic_src": "resources/cards/карточка_родственники.jpg"
+            },
+            {
+                "next_step": "discussion_arine_conflict",
+                "text": "Блокировка ксюши",
+                "pic_src": "resources/cards/блок_итог.jpg"
+            }
+        ],
+        "next_step": ""
+    },
+    "gether_deb_too": {
+        "src": "resources/gether/сбор_арсен_деб_поддержал.mp4",
+        "title": "Выберите карточку: она определит, поучаствуют ли родственники в поздравлении",
+        "choices": [
+            {
+                "next_step": "discussion_yes",
+                "text": "Поздравление родственников",
+                "pic_src": "resources/cards/карточка_родственники.jpg"
+            },
+            {
+                "next_step": "discussion_arine_conflict",
+                "text": "Блокировка ксюши",
+                "pic_src": "resources/cards/блок_итог.jpg"
+            }
+        ],
+        "next_step": ""
+    },
+    "gether_deb_agressive": {
+        "src": "resources/gether/сбор_арсен_деб_попустил.mp4",
+        "title": "Выберите карточку: она определит, поучаствуют ли родственники в поздравлении",
+        "choices": [
+            {
+                "next_step": "discussion_yes",
+                "text": "Поздравление родственников",
+                "pic_src": "resources/cards/карточка_родственники.jpg"
+            },
+            {
+                "next_step": "discussion_arine_conflict",
+                "text": "Блокировка ксюши",
+                "pic_src": "resources/cards/блок_итог.jpg"
+            }
+        ],
+        "next_step": ""
+    },
+    "gether_attention": {
+        "src": "resources/gether/сбор_арсен_указать.mp4",
+        "title": "Как войти Арсену?",
+        "choices": [
+            {
+                "next_step": "gether_arsen_arestant",
+                "text": "Как в хату",
+                "pic_src": ""
+            },
+            {
+                "next_step": "gether_arsen_quite",
+                "text": "Войти вежливо",
+                "pic_src": ""
+            },
+            {
+                "next_step": "gether_arsen_drop",
+                "text": "Упасть на входе",
+                "pic_src": ""
+            }
+        ],
+        "next_step": ""
+    },
+    "gether_arsen_arestant": {
+        "src": "resources/gether/сбор_арсен_арестант.mp4",
+        "title": "Как ответить Арсену?",
+        "choices": [
+            {
+                "next_step": "gether_arsen_eat",
+                "text": "Схавать",
+                "pic_src": ""
+            },
+            {
+                "next_step": "gether_arsen_sorry",
+                "text": "Извиниться",
+                "pic_src": ""
+            },
+            {
+                "next_step": "gether_arsen_bad",
+                "text": "Нагрубить в ответ",
+                "pic_src": ""
+            }
+        ],
+        "next_step": ""
+    },
+    "gether_arsen_eat": {
+        "src": "resources/gether/сбор_арсен_схавал.mp4",
+        "title": "Выберите карточку: она определит, поучаствуют ли родственники в поздравлении",
+        "choices": [
+            {
+                "next_step": "discussion_yes",
+                "text": "Поздравление родственников",
+                "pic_src": "resources/cards/карточка_родственники.jpg"
+            },
+            {
+                "next_step": "discussion_arine_conflict",
+                "text": "Блокировка ксюши",
+                "pic_src": "resources/cards/блок_итог.jpg"
+            }
+        ],
+        "next_step": ""
+    },
+    "gether_arsen_sorry": {
+        "src": "resources/gether/сбор_арсен_извиняется.mp4",
+        "title": "Выберите карточку: она определит, поучаствуют ли родственники в поздравлении",
+        "choices": [
+            {
+                "next_step": "discussion_yes",
+                "text": "Поздравление родственников",
+                "pic_src": "resources/cards/карточка_родственники.jpg"
+            },
+            {
+                "next_step": "discussion_arine_conflict",
+                "text": "Блокировка ксюши",
+                "pic_src": "resources/cards/блок_итог.jpg"
+            }
+        ],
+        "next_step": ""
+    },
+    "gether_arsen_bad": {
+        "src": "resources/gether/сбор_арсен_ответить.mp4",
+        "title": "Выберите карточку: она определит, поучаствуют ли родственники в поздравлении",
+        "choices": [
+            {
+                "next_step": "discussion_yes_but_with_arsen",
+                "text": "Поздравление родственников",
+                "pic_src": "resources/cards/карточка_родственники.jpg"
+            },
+            {
+                "next_step": "discussion_arine_and_arsen_conflict",
+                "text": "Блокировка ксюши",
+                "pic_src": "resources/cards/блок_итог.jpg"
+            }
+        ],
+        "next_step": ""
+    },
+    "gether_arsen_quite": {
+        "src": "resources/gether/сбор_арсен_вежливо_вошел.mp4",
+        "title": "Как ответить Арсену?",
+        "choices": [
+            {
+                "next_step": "gether_arsen_eat",
+                "text": "Схавать",
+                "pic_src": ""
+            },
+            {
+                "next_step": "gether_arsen_sorry",
+                "text": "Извиниться",
+                "pic_src": ""
+            },
+            {
+                "next_step": "gether_arsen_bad",
+                "text": "Нагрубить в ответ",
+                "pic_src": ""
+            }
+        ],
+        "next_step": ""
+    },
+    "gether_arsen_drop": {
+        "src": "resources/gether/сбор_арсен_упал.mp4",
+        "title": "Как ответить Арсену?",
+        "choices": [
+            {
+                "next_step": "gether_arsen_eat",
+                "text": "Схавать",
+                "pic_src": ""
+            },
+            {
+                "next_step": "gether_arsen_sorry",
+                "text": "Извиниться",
+                "pic_src": ""
+            },
+            {
+                "next_step": "gether_arsen_bad",
+                "text": "Нагрубить в ответ",
+                "pic_src": ""
+            }
+        ],
+        "next_step": ""
+    },
+    "discussion_yes": {
+        "src": "resources/discussion/перед_поздравлением.mp4",
+        "title": "Какое поздравление посмотреть?",
+        "choices": [
+            {
+                "next_step": "congrats_from_mom",
+                "text": "Мамы",
+                "pic_src": ""
+            },
+            {
+                "next_step": "congrats_from_friend",
+                "text": "Подруги",
+                "pic_src": ""
+            },
+            {
+                "next_step": "congrats_from_sister",
+                "text": "Сестры",
+                "pic_src": ""
+            }
+        ],
+        "next_step": ""
+    },
+    "congrats_from_mom": {
+        "src": "resources/discussion/поздравление_мамы.mp4",
+        "title": "Выберите карточку: она определит, какой пол будет примой в придумывании идей",
+        "choices": [
+            {
+                "next_step": "gift_ideas_girls_with_nobody",
+                "text": "Девочки",
+                "pic_src": "resources/cards/карточка_показания_дылды.jpg"
+            },
+            {
+                "next_step": "gift_ideas_boys_with_nobody",
+                "text": "Мальчики",
+                "pic_src": "resources/cards/карточка_показания_полины.jpg"
+            }
+        ],
+        "next_step": ""
+    },
+    "congrats_from_friend": {
+        "src": "resources/discussion/поздравление_подруги.mp4",
+        "title": "Выберите карточку: она определит, какой пол будет примой в придумывании идей",
+        "choices": [
+            {
+                "next_step": "gift_ideas_girls_with_nobody",
+                "text": "Девочки",
+                "pic_src": "resources/cards/карточка_показания_дылды.jpg"
+            },
+            {
+                "next_step": "gift_ideas_boys_with_nobody",
+                "text": "Мальчики",
+                "pic_src": "resources/cards/карточка_показания_полины.jpg"
+            }
+        ],
+        "next_step": ""
+    },
+    "congrats_from_sister": {
+        "src": "resources/discussion/поздравление_сестры.mp4",
+        "title": "Выберите карточку: она определит, какой пол будет примой в придумывании идей",
+        "choices": [
+            {
+                "next_step": "gift_ideas_girls_with_nobody",
+                "text": "Девочки",
+                "pic_src": "resources/cards/карточка_показания_дылды.jpg"
+            },
+            {
+                "next_step": "gift_ideas_boys_with_nobody",
+                "text": "Мальчики",
+                "pic_src": "resources/cards/карточка_показания_полины.jpg"
+            }
+        ],
+        "next_step": ""
+    },
+    "discussion_yes_but_with_arsen": {
+        "src": "resources/discussion/перед_поздравлением.mp4",
+        "title": "Какое поздравление посмотреть?",
+        "choices": [
+            {
+                "next_step": "congrats_from_mom_conf_arsen",
+                "text": "Мамы",
+                "pic_src": ""
+            },
+            {
+                "next_step": "congrats_from_friend_conf_arsen",
+                "text": "Подруги",
+                "pic_src": ""
+            },
+            {
+                "next_step": "congrats_from_sister_conf_arsen",
+                "text": "Сестры",
+                "pic_src": ""
+            }
+        ],
+        "next_step": ""
+    },
+    "congrats_from_mom_conf_arsen": {
+        "src": "resources/discussion/поздравление_мамы.mp4",
+        "title": "Выберите карточку: она определит, какой пол будет примой в придумывании идей",
+        "choices": [
+            {
+                "next_step": "gift_ideas_girls_with_arsen",
+                "text": "Девочки",
+                "pic_src": "resources/cards/карточка_показания_дылды.jpg"
+            },
+            {
+                "next_step": "gift_ideas_boys_with_arsen",
+                "text": "Мальчики",
+                "pic_src": "resources/cards/карточка_показания_полины.jpg"
+            }
+        ],
+        "next_step": ""
+    },
+    "congrats_from_friend_conf_arsen": {
+        "src": "resources/discussion/поздравление_подруги.mp4",
+        "title": "Выберите карточку: она определит, какой пол будет примой в придумывании идей",
+        "choices": [
+            {
+                "next_step": "gift_ideas_girls_with_arsen",
+                "text": "Девочки",
+                "pic_src": "resources/cards/карточка_показания_дылды.jpg"
+            },
+            {
+                "next_step": "gift_ideas_boys_with_arsen",
+                "text": "Мальчики",
+                "pic_src": "resources/cards/карточка_показания_полины.jpg"
+            }
+        ],
+        "next_step": ""
+    },
+    "congrats_from_sister_conf_arsen": {
+        "src": "resources/discussion/поздравление_сестры.mp4",
+        "title": "Выберите карточку: она определит, какой пол будет примой в придумывании идей",
+        "choices": [
+            {
+                "next_step": "gift_ideas_girls_with_arsen",
+                "text": "Девочки",
+                "pic_src": "resources/cards/карточка_показания_дылды.jpg"
+            },
+            {
+                "next_step": "gift_ideas_boys_with_arsen",
+                "text": "Мальчики",
+                "pic_src": "resources/cards/карточка_показания_полины.jpg"
+            }
+        ],
+        "next_step": ""
+    },
+    "discussion_arine_conflict": {
+        "src": "resources/discussion/спор_арина.mp4",
+        "title": "Что сделать Арине?",
+        "choices": [
+            {
+                "next_step": "discussion_conf_arine_over",
+                "text": "Согласиться",
+                "pic_src": ""
+            },
+            {
+                "next_step": "discussion_conf_arine_continue",
+                "text": "Не согласиться",
+                "pic_src": ""
+            }
+        ],
+        "next_step": ""
+    },
+    "discussion_conf_arine_over": {
+        "src": "resources/discussion/спор_арина_согласна.mp4",
+        "title": "Выберите карточку: она определит, какой пол будет примой в придумывании идей",
+        "choices": [
+            {
+                "next_step": "gift_ideas_girls_with_nobody",
+                "text": "Девочки",
+                "pic_src": "resources/cards/карточка_показания_дылды.jpg"
+            },
+            {
+                "next_step": "gift_ideas_boys_with_nobody",
+                "text": "Мальчики",
+                "pic_src": "resources/cards/карточка_показания_полины.jpg"
+            }
+        ],
+        "next_step": ""
+    },
+    "discussion_conf_arine_continue": {
+        "src": "resources/discussion/спор_арина_против.mp4",
+        "title": "Выберите карточку: она определит, какой пол будет примой в придумывании идей",
+        "choices": [
+            {
+                "next_step": "gift_ideas_girls_with_arine",
+                "text": "Девочки",
+                "pic_src": "resources/cards/карточка_показания_дылды.jpg"
+            },
+            {
+                "next_step": "gift_ideas_boys_with_arine",
+                "text": "Мальчики",
+                "pic_src": "resources/cards/карточка_показания_полины.jpg"
+            }
+        ],
+        "next_step": ""
+    },
+    "discussion_arine_and_arsen_conflict": {
+        "src": "resources/discussion/спор_арина.mp4",
+        "title": "Что сделать Арине?",
+        "choices": [
+            {
+                "next_step": "discussion_conf_arine_over_but_arsen_not",
+                "text": "Согласиться",
+                "pic_src": ""
+            },
+            {
+                "next_step": "discussion_conf_arine_and_arsen_continue",
+                "text": "Не согласиться",
+                "pic_src": ""
+            }
+        ],
+        "next_step": ""
+    },
+    "discussion_conf_arine_over_but_arsen_not": {
+        "src": "resources/discussion/спор_арина_согласна.mp4",
+        "title": "Выберите карточку: она определит, какой пол будет примой в придумывании идей",
+        "choices": [
+            {
+                "next_step": "gift_ideas_girls_with_arsen",
+                "text": "Девочки",
+                "pic_src": "resources/cards/карточка_показания_дылды.jpg"
+            },
+            {
+                "next_step": "gift_ideas_boys_with_arsen",
+                "text": "Мальчики",
+                "pic_src": "resources/cards/карточка_показания_полины.jpg"
+            }
+        ],
+        "next_step": ""
+    },
+    "discussion_conf_arine_and_arsen_continue": {
+        "src": "resources/discussion/спор_арина_против.mp4",
+        "title": "Выберите карточку: она определит, какой пол будет примой в придумывании идей",
+        "choices": [
+            {
+                "next_step": "gift_ideas_girls_with_both",
+                "text": "Девочки",
+                "pic_src": "resources/cards/карточка_показания_дылды.jpg"
+            },
+            {
+                "next_step": "gift_ideas_boys_with_both",
+                "text": "Мальчики",
+                "pic_src": "resources/cards/карточка_показания_полины.jpg"
+            }
+        ],
+        "next_step": ""
+    },
+    "gift_ideas_girls_with_nobody": {
+        "src": "resources/gift_ideas/свои_подарки_девочки.mp4",
+        "title": "Что сделать Полине?",
+        "choices": [
+            {
+                "next_step": "girls_with_nobody_ring",
+                "text": "Похвастаться колечком",
+                "pic_src": ""
+            },
+            {
+                "next_step": "girls_with_nobody_weather",
+                "text": "Заговорить о погоде",
+                "pic_src": ""
+            },
+            {
+                "next_step": "girls_with_nobody_tea",
+                "text": "Предложить чай",
+                "pic_src": ""
+            }
+        ],
+        "next_step": ""
+    },
+    "girls_with_nobody_ring": {
+        "src": "resources/gift_ideas/свои_подарки_хвастается.mp4",
+        "title": "Выберите, какое поздравление посмотреть",
+        "choices": [
+            {
+                "next_step": "girls_with_nobody_ring_bastards",
+                "text": "Джорданы",
+                "pic_src": ""
+            },
+            {
+                "next_step": "girls_with_nobody_ring_tfest",
+                "text": "Тифест",
+                "pic_src": ""
+            }
+        ],
+        "next_step": ""
+    },
+    "girls_with_nobody_ring_bastards": {
+        "src": "resources/gift_ideas/свои_подарки_ублюдки.mp4",
+        "title": "Выберите карточку: она определит судьбу торта",
+        "choices": [
+            {
+                "next_step": "store_with_nobody",
+                "text": "карточка за тортом",
+                "pic_src": "resources/cards/карточка_за_тортом.jpg"
+            },
+            {
+                "next_step": "store_courier_with_nobody",
+                "text": "карточка московская правда",
+                "pic_src": "resources/cards/карточка_московская_правда.jpg"
+            }
+        ],
+        "next_step": ""
+    },
+    "girls_with_nobody_ring_tfest": {
+        "src": "resources/gift_ideas/свои_подарки_тфест.mp4",
+        "title": "Выберите карточку: она определит судьбу торта",
+        "choices": [
+            {
+                "next_step": "store_with_nobody",
+                "text": "карточка за тортом",
+                "pic_src": "resources/cards/карточка_за_тортом.jpg"
+            },
+            {
+                "next_step": "store_courier_with_nobody",
+                "text": "карточка московская правда",
+                "pic_src": "resources/cards/карточка_московская_правда.jpg"
+            }
+        ],
+        "next_step": ""
+    },
+    "girls_with_nobody_weather": {
+        "src": "resources/gift_ideas/свои_подарки_погода.mp4",
+        "title": "Выберите, какое поздравление посмотреть",
+        "choices": [
+            {
+                "next_step": "girls_with_nobody_weather_bastards",
+                "text": "Джорданы",
+                "pic_src": ""
+            },
+            {
+                "next_step": "girls_with_nobody_weather_tfest",
+                "text": "Тифест",
+                "pic_src": ""
+            }
+        ],
+        "next_step": ""
+    },
+    "girls_with_nobody_weather_bastards": {
+        "src": "resources/gift_ideas/свои_подарки_ублюдки.mp4",
+        "title": "Выберите карточку: она определит судьбу торта",
+        "choices": [
+            {
+                "next_step": "store_with_nobody",
+                "text": "карточка за тортом",
+                "pic_src": "resources/cards/карточка_за_тортом.jpg"
+            },
+            {
+                "next_step": "store_courier_with_nobody",
+                "text": "карточка московская правда",
+                "pic_src": "resources/cards/карточка_московская_правда.jpg"
+            }
+        ],
+        "next_step": ""
+    },
+    "girls_with_nobody_weather_tfest": {
+        "src": "resources/gift_ideas/свои_подарки_тфест.mp4",
+        "title": "Выберите карточку: она определит судьбу торта",
+        "choices": [
+            {
+                "next_step": "store_with_nobody",
+                "text": "карточка за тортом",
+                "pic_src": "resources/cards/карточка_за_тортом.jpg"
+            },
+            {
+                "next_step": "store_courier_with_nobody",
+                "text": "карточка московская правда",
+                "pic_src": "resources/cards/карточка_московская_правда.jpg"
+            }
+        ],
+        "next_step": ""
+    },
+    "girls_with_nobody_tea": {
+        "src": "resources/gift_ideas/свои_подарки_чай.mp4",
+        "title": "Выберите, какое поздравление посмотреть",
+        "choices": [
+            {
+                "next_step": "girls_with_nobody_tea_bastards",
+                "text": "Джорданы",
+                "pic_src": ""
+            },
+            {
+                "next_step": "girls_with_nobody_tea_tfest",
+                "text": "Тифест",
+                "pic_src": ""
+            }
+        ],
+        "next_step": ""
+    },
+    "girls_with_nobody_tea_bastards": {
+        "src": "resources/gift_ideas/свои_подарки_ублюдки.mp4",
+        "title": "Выберите карточку: она определит судьбу торта",
+        "choices": [
+            {
+                "next_step": "store_with_nobody",
+                "text": "карточка за тортом",
+                "pic_src": "resources/cards/карточка_за_тортом.jpg"
+            },
+            {
+                "next_step": "store_courier_with_nobody",
+                "text": "карточка московская правда",
+                "pic_src": "resources/cards/карточка_московская_правда.jpg"
+            }
+        ],
+        "next_step": ""
+    },
+    "girls_with_nobody_tea_tfest": {
+        "src": "resources/gift_ideas/свои_подарки_тфест.mp4",
+        "title": "Выберите карточку: она определит судьбу торта",
+        "choices": [
+            {
+                "next_step": "store_with_nobody",
+                "text": "карточка за тортом",
+                "pic_src": "resources/cards/карточка_за_тортом.jpg"
+            },
+            {
+                "next_step": "store_courier_with_nobody",
+                "text": "карточка московская правда",
+                "pic_src": "resources/cards/карточка_московская_правда.jpg"
+            }
+        ],
+        "next_step": ""
+    },
+    "gift_ideas_girls_with_arsen": {
+        "src": "resources/gift_ideas/свои_подарки_девочки.mp4",
+        "title": "Что сделать Полине?",
+        "choices": [
+            {
+                "next_step": "girls_with_arsen_ring",
+                "text": "Похвастаться колечком",
+                "pic_src": ""
+            },
+            {
+                "next_step": "girls_with_arsen_weather",
+                "text": "Заговорить о погоде",
+                "pic_src": ""
+            },
+            {
+                "next_step": "girls_with_arsen_tea",
+                "text": "Предложить чай",
+                "pic_src": ""
+            }
+        ],
+        "next_step": ""
+    },
+    "girls_with_arsen_ring": {
+        "src": "resources/gift_ideas/свои_подарки_хвастается.mp4",
+        "title": "Выберите, какое поздравление посмотреть",
+        "choices": [
+            {
+                "next_step": "girls_with_arsen_ring_bastards",
+                "text": "Джорданы",
+                "pic_src": ""
+            },
+            {
+                "next_step": "girls_with_arsen_ring_tfest",
+                "text": "Тифест",
+                "pic_src": ""
+            }
+        ],
+        "next_step": ""
+    },
+    "girls_with_arsen_ring_bastards": {
+        "src": "resources/gift_ideas/свои_подарки_ублюдки.mp4",
+        "title": "Выберите карточку: она определит судьбу торта",
+        "choices": [
+            {
+                "next_step": "store_with_arsen",
+                "text": "карточка за тортом",
+                "pic_src": "resources/cards/карточка_за_тортом.jpg"
+            },
+            {
+                "next_step": "store_courier_with_arsen",
+                "text": "карточка московская правда",
+                "pic_src": "resources/cards/карточка_московская_правда.jpg"
+            }
+        ],
+        "next_step": ""
+    },
+    "girls_with_arsen_ring_tfest": {
+        "src": "resources/gift_ideas/свои_подарки_тфест.mp4",
+        "title": "Выберите карточку: она определит судьбу торта",
+        "choices": [
+            {
+                "next_step": "store_with_arsen",
+                "text": "карточка за тортом",
+                "pic_src": "resources/cards/карточка_за_тортом.jpg"
+            },
+            {
+                "next_step": "store_courier_with_arsen",
+                "text": "карточка московская правда",
+                "pic_src": "resources/cards/карточка_московская_правда.jpg"
+            }
+        ],
+        "next_step": ""
+    },
+    "girls_with_arsen_weather": {
+        "src": "resources/gift_ideas/свои_подарки_погода.mp4",
+        "title": "Выберите, какое поздравление посмотреть",
+        "choices": [
+            {
+                "next_step": "girls_with_arsen_weather_bastards",
+                "text": "Джорданы",
+                "pic_src": ""
+            },
+            {
+                "next_step": "girls_with_arsen_weather_tfest",
+                "text": "Тифест",
+                "pic_src": ""
+            }
+        ],
+        "next_step": ""
+    },
+    "girls_with_arsen_weather_bastards": {
+        "src": "resources/gift_ideas/свои_подарки_ублюдки.mp4",
+        "title": "Выберите карточку: она определит судьбу торта",
+        "choices": [
+            {
+                "next_step": "store_with_arsen",
+                "text": "карточка за тортом",
+                "pic_src": "resources/cards/карточка_за_тортом.jpg"
+            },
+            {
+                "next_step": "store_courier_with_arsen",
+                "text": "карточка московская правда",
+                "pic_src": "resources/cards/карточка_московская_правда.jpg"
+            }
+        ],
+        "next_step": ""
+    },
+    "girls_with_arsen_weather_tfest": {
+        "src": "resources/gift_ideas/свои_подарки_тфест.mp4",
+        "title": "Выберите карточку: она определит судьбу торта",
+        "choices": [
+            {
+                "next_step": "store_with_arsen",
+                "text": "карточка за тортом",
+                "pic_src": "resources/cards/карточка_за_тортом.jpg"
+            },
+            {
+                "next_step": "store_courier_with_arsen",
+                "text": "карточка московская правда",
+                "pic_src": "resources/cards/карточка_московская_правда.jpg"
+            }
+        ],
+        "next_step": ""
+    },
+    "girls_with_arsen_tea": {
+        "src": "resources/gift_ideas/свои_подарки_чай.mp4",
+        "title": "Выберите, какое поздравление посмотреть",
+        "choices": [
+            {
+                "next_step": "girls_with_arsen_tea_bastards",
+                "text": "Джорданы",
+                "pic_src": ""
+            },
+            {
+                "next_step": "girls_with_arsen_tea_tfest",
+                "text": "Тифест",
+                "pic_src": ""
+            }
+        ],
+        "next_step": ""
+    },
+    "girls_with_arsen_tea_bastards": {
+        "src": "resources/gift_ideas/свои_подарки_ублюдки.mp4",
+        "title": "Выберите карточку: она определит судьбу торта",
+        "choices": [
+            {
+                "next_step": "store_with_arsen",
+                "text": "карточка за тортом",
+                "pic_src": "resources/cards/карточка_за_тортом.jpg"
+            },
+            {
+                "next_step": "store_courier_with_arsen",
+                "text": "карточка московская правда",
+                "pic_src": "resources/cards/карточка_московская_правда.jpg"
+            }
+        ],
+        "next_step": ""
+    },
+    "girls_with_arsen_tea_tfest": {
+        "src": "resources/gift_ideas/свои_подарки_тфест.mp4",
+        "title": "Выберите карточку: она определит судьбу торта",
+        "choices": [
+            {
+                "next_step": "store_with_arsen",
+                "text": "карточка за тортом",
+                "pic_src": "resources/cards/карточка_за_тортом.jpg"
+            },
+            {
+                "next_step": "store_courier_with_arsen",
+                "text": "карточка московская правда",
+                "pic_src": "resources/cards/карточка_московская_правда.jpg"
+            }
+        ],
+        "next_step": ""
+    },
+    "gift_ideas_girls_with_arine": {
+        "src": "resources/gift_ideas/свои_подарки_девочки.mp4",
+        "title": "Что сделать Полине?",
+        "choices": [
+            {
+                "next_step": "girls_with_arine_ring",
+                "text": "Похвастаться колечком",
+                "pic_src": ""
+            },
+            {
+                "next_step": "girls_with_arine_weather",
+                "text": "Заговорить о погоде",
+                "pic_src": ""
+            },
+            {
+                "next_step": "girls_with_arine_tea",
+                "text": "Предложить чай",
+                "pic_src": ""
+            }
+        ],
+        "next_step": ""
+    },
+    "girls_with_arine_ring": {
+        "src": "resources/gift_ideas/свои_подарки_хвастается.mp4",
+        "title": "Выберите, какое поздравление посмотреть",
+        "choices": [
+            {
+                "next_step": "girls_with_arine_ring_bastards",
+                "text": "Джорданы",
+                "pic_src": ""
+            },
+            {
+                "next_step": "girls_with_arine_ring_tfest",
+                "text": "Тифест",
+                "pic_src": ""
+            }
+        ],
+        "next_step": ""
+    },
+    "girls_with_arine_ring_bastards": {
+        "src": "resources/gift_ideas/свои_подарки_ублюдки.mp4",
+        "title": "Выберите карточку: она определит судьбу торта",
+        "choices": [
+            {
+                "next_step": "store_with_arine",
+                "text": "карточка за тортом",
+                "pic_src": "resources/cards/карточка_за_тортом.jpg"
+            },
+            {
+                "next_step": "store_courier_with_arine",
+                "text": "карточка московская правда",
+                "pic_src": "resources/cards/карточка_московская_правда.jpg"
+            }
+        ],
+        "next_step": ""
+    },
+    "girls_with_arine_ring_tfest": {
+        "src": "resources/gift_ideas/свои_подарки_тфест.mp4",
+        "title": "Выберите карточку: она определит судьбу торта",
+        "choices": [
+            {
+                "next_step": "store_with_arine",
+                "text": "карточка за тортом",
+                "pic_src": "resources/cards/карточка_за_тортом.jpg"
+            },
+            {
+                "next_step": "store_courier_with_arine",
+                "text": "карточка московская правда",
+                "pic_src": "resources/cards/карточка_московская_правда.jpg"
+            }
+        ],
+        "next_step": ""
+    },
+    "girls_with_arine_weather": {
+        "src": "resources/gift_ideas/свои_подарки_погода.mp4",
+        "title": "Выберите, какое поздравление посмотреть",
+        "choices": [
+            {
+                "next_step": "girls_with_arine_weather_bastards",
+                "text": "Джорданы",
+                "pic_src": ""
+            },
+            {
+                "next_step": "girls_with_arine_weather_tfest",
+                "text": "Тифест",
+                "pic_src": ""
+            }
+        ],
+        "next_step": ""
+    },
+    "girls_with_arine_weather_bastards": {
+        "src": "resources/gift_ideas/свои_подарки_ублюдки.mp4",
+        "title": "Выберите карточку: она определит судьбу торта",
+        "choices": [
+            {
+                "next_step": "store_with_arine",
+                "text": "карточка за тортом",
+                "pic_src": "resources/cards/карточка_за_тортом.jpg"
+            },
+            {
+                "next_step": "store_courier_with_arine",
+                "text": "карточка московская правда",
+                "pic_src": "resources/cards/карточка_московская_правда.jpg"
+            }
+        ],
+        "next_step": ""
+    },
+    "girls_with_arine_weather_tfest": {
+        "src": "resources/gift_ideas/свои_подарки_тфест.mp4",
+        "title": "Выберите карточку: она определит судьбу торта",
+        "choices": [
+            {
+                "next_step": "store_with_arine",
+                "text": "карточка за тортом",
+                "pic_src": "resources/cards/карточка_за_тортом.jpg"
+            },
+            {
+                "next_step": "store_courier_with_arine",
+                "text": "карточка московская правда",
+                "pic_src": "resources/cards/карточка_московская_правда.jpg"
+            }
+        ],
+        "next_step": ""
+    },
+    "girls_with_arine_tea": {
+        "src": "resources/gift_ideas/свои_подарки_чай.mp4",
+        "title": "Выберите, какое поздравление посмотреть",
+        "choices": [
+            {
+                "next_step": "girls_with_arine_tea_bastards",
+                "text": "Джорданы",
+                "pic_src": ""
+            },
+            {
+                "next_step": "girls_with_arine_tea_tfest",
+                "text": "Тифест",
+                "pic_src": ""
+            }
+        ],
+        "next_step": ""
+    },
+    "girls_with_arine_tea_bastards": {
+        "src": "resources/gift_ideas/свои_подарки_ублюдки.mp4",
+        "title": "Выберите карточку: она определит судьбу торта",
+        "choices": [
+            {
+                "next_step": "store_with_arine",
+                "text": "карточка за тортом",
+                "pic_src": "resources/cards/карточка_за_тортом.jpg"
+            },
+            {
+                "next_step": "store_courier_with_arine",
+                "text": "карточка московская правда",
+                "pic_src": "resources/cards/карточка_московская_правда.jpg"
+            }
+        ],
+        "next_step": ""
+    },
+    "girls_with_arine_tea_tfest": {
+        "src": "resources/gift_ideas/свои_подарки_тфест.mp4",
+        "title": "Выберите карточку: она определит судьбу торта",
+        "choices": [
+            {
+                "next_step": "store_with_arine",
+                "text": "карточка за тортом",
+                "pic_src": "resources/cards/карточка_за_тортом.jpg"
+            },
+            {
+                "next_step": "store_courier_with_arine",
+                "text": "карточка московская правда",
+                "pic_src": "resources/cards/карточка_московская_правда.jpg"
+            }
+        ],
+        "next_step": ""
+    },
+    "gift_ideas_girls_with_both": {
+        "src": "resources/gift_ideas/свои_подарки_девочки.mp4",
+        "title": "Что сделать Полине?",
+        "choices": [
+            {
+                "next_step": "girls_with_both_ring",
+                "text": "Похвастаться колечком",
+                "pic_src": ""
+            },
+            {
+                "next_step": "girls_with_both_weather",
+                "text": "Заговорить о погоде",
+                "pic_src": ""
+            },
+            {
+                "next_step": "girls_with_both_tea",
+                "text": "Предложить чай",
+                "pic_src": ""
+            }
+        ],
+        "next_step": ""
+    },
+    "girls_with_both_ring": {
+        "src": "resources/gift_ideas/свои_подарки_хвастается.mp4",
+        "title": "Выберите, какое поздравление посмотреть",
+        "choices": [
+            {
+                "next_step": "girls_with_both_ring_bastards",
+                "text": "Джорданы",
+                "pic_src": ""
+            },
+            {
+                "next_step": "girls_with_both_ring_tfest",
+                "text": "Тифест",
+                "pic_src": ""
+            }
+        ],
+        "next_step": ""
+    },
+    "girls_with_both_ring_bastards": {
+        "src": "resources/gift_ideas/свои_подарки_ублюдки.mp4",
+        "title": "Выберите карточку: она определит судьбу торта",
+        "choices": [
+            {
+                "next_step": "store_with_both",
+                "text": "карточка за тортом",
+                "pic_src": "resources/cards/карточка_за_тортом.jpg"
+            },
+            {
+                "next_step": "store_courier_with_both",
+                "text": "карточка московская правда",
+                "pic_src": "resources/cards/карточка_московская_правда.jpg"
+            }
+        ],
+        "next_step": ""
+    },
+    "girls_with_both_ring_tfest": {
+        "src": "resources/gift_ideas/свои_подарки_тфест.mp4",
+        "title": "Выберите карточку: она определит судьбу торта",
+        "choices": [
+            {
+                "next_step": "store_with_both",
+                "text": "карточка за тортом",
+                "pic_src": "resources/cards/карточка_за_тортом.jpg"
+            },
+            {
+                "next_step": "store_courier_with_both",
+                "text": "карточка московская правда",
+                "pic_src": "resources/cards/карточка_московская_правда.jpg"
+            }
+        ],
+        "next_step": ""
+    },
+    "girls_with_both_weather": {
+        "src": "resources/gift_ideas/свои_подарки_погода.mp4",
+        "title": "Выберите, какое поздравление посмотреть",
+        "choices": [
+            {
+                "next_step": "girls_with_both_weather_bastards",
+                "text": "Джорданы",
+                "pic_src": ""
+            },
+            {
+                "next_step": "girls_with_both_weather_tfest",
+                "text": "Тифест",
+                "pic_src": ""
+            }
+        ],
+        "next_step": ""
+    },
+    "girls_with_both_weather_bastards": {
+        "src": "resources/gift_ideas/свои_подарки_ублюдки.mp4",
+        "title": "Выберите карточку: она определит судьбу торта",
+        "choices": [
+            {
+                "next_step": "store_with_both",
+                "text": "карточка за тортом",
+                "pic_src": "resources/cards/карточка_за_тортом.jpg"
+            },
+            {
+                "next_step": "store_courier_with_both",
+                "text": "карточка московская правда",
+                "pic_src": "resources/cards/карточка_московская_правда.jpg"
+            }
+        ],
+        "next_step": ""
+    },
+    "girls_with_both_weather_tfest": {
+        "src": "resources/gift_ideas/свои_подарки_тфест.mp4",
+        "title": "Выберите карточку: она определит судьбу торта",
+        "choices": [
+            {
+                "next_step": "store_with_both",
+                "text": "карточка за тортом",
+                "pic_src": "resources/cards/карточка_за_тортом.jpg"
+            },
+            {
+                "next_step": "store_courier_with_both",
+                "text": "карточка московская правда",
+                "pic_src": "resources/cards/карточка_московская_правда.jpg"
+            }
+        ],
+        "next_step": ""
+    },
+    "girls_with_both_tea": {
+        "src": "resources/gift_ideas/свои_подарки_чай.mp4",
+        "title": "Выберите, какое поздравление посмотреть",
+        "choices": [
+            {
+                "next_step": "girls_with_both_tea_bastards",
+                "text": "Джорданы",
+                "pic_src": ""
+            },
+            {
+                "next_step": "girls_with_both_tea_tfest",
+                "text": "Тифест",
+                "pic_src": ""
+            }
+        ],
+        "next_step": ""
+    },
+    "girls_with_both_tea_bastards": {
+        "src": "resources/gift_ideas/свои_подарки_ублюдки.mp4",
+        "title": "Выберите карточку: она определит судьбу торта",
+        "choices": [
+            {
+                "next_step": "store_with_both",
+                "text": "карточка за тортом",
+                "pic_src": "resources/cards/карточка_за_тортом.jpg"
+            },
+            {
+                "next_step": "store_courier_with_both",
+                "text": "карточка московская правда",
+                "pic_src": "resources/cards/карточка_московская_правда.jpg"
+            }
+        ],
+        "next_step": ""
+    },
+    "girls_with_both_tea_tfest": {
+        "src": "resources/gift_ideas/свои_подарки_тфест.mp4",
+        "title": "Выберите карточку: она определит судьбу торта",
+        "choices": [
+            {
+                "next_step": "store_with_both",
+                "text": "карточка за тортом",
+                "pic_src": "resources/cards/карточка_за_тортом.jpg"
+            },
+            {
+                "next_step": "store_courier_with_both",
+                "text": "карточка московская правда",
+                "pic_src": "resources/cards/карточка_московская_правда.jpg"
+            }
+        ],
+        "next_step": ""
+    },
+    "gift_ideas_boys_with_nobody": {
+        "src": "resources/gift_ideas/свои_подарки_мальчики.mp4",
+        "title": "Что сделать Игнату?",
+        "choices": [
+            {
+                "next_step": "boys_with_nobody_late",
+                "text": "Спросить с Полины за опоздание",
+                "pic_src": ""
+            },
+            {
+                "next_step": "boys_with_nobody_question",
+                "text": "Спросить как дела",
+                "pic_src": ""
+            },
+            {
+                "next_step": "boys_with_nobody_stand",
+                "text": "Научить правильно вставать",
+                "pic_src": ""
+            }
+        ],
+        "next_step": ""
+    },
+    "boys_with_nobody_late": {
+        "src": "resources/gift_ideas/свои_подарки_доебался.mp4",
+        "title": "Выберите, какое поздравление посмотреть",
+        "choices": [
+            {
+                "next_step": "boys_with_nobody_late_masks",
+                "text": "Маски-шоу",
+                "pic_src": ""
+            },
+            {
+                "next_step": "boys_with_nobody_late_pirat",
+                "text": "Пират",
+                "pic_src": ""
+            }
+        ],
+        "next_step": ""
+    },
+    "boys_with_nobody_late_masks": {
+        "src": "resources/gift_ideas/свои_подарки_маски.mp4",
+        "title": "Выберите карточку: она определит судьбу торта",
+        "choices": [
+            {
+                "next_step": "store_with_nobody",
+                "text": "карточка за тортом",
+                "pic_src": "resources/cards/карточка_за_тортом.jpg"
+            },
+            {
+                "next_step": "store_courier_with_nobody",
+                "text": "карточка московская правда",
+                "pic_src": "resources/cards/карточка_московская_правда.jpg"
+            }
+        ],
+        "next_step": ""
+    },
+    "boys_with_nobody_late_pirat": {
+        "src": "resources/gift_ideas/свои_подарки_пират.mp4",
+        "title": "Выберите карточку: она определит судьбу торта",
+        "choices": [
+            {
+                "next_step": "store_with_nobody",
+                "text": "карточка за тортом",
+                "pic_src": "resources/cards/карточка_за_тортом.jpg"
+            },
+            {
+                "next_step": "store_courier_with_nobody",
+                "text": "карточка московская правда",
+                "pic_src": "resources/cards/карточка_московская_правда.jpg"
+            }
+        ],
+        "next_step": ""
+    },
+    "boys_with_nobody_question": {
+        "src": "resources/gift_ideas/свои_подарки_как_дела.mp4",
+        "title": "Выберите, какое поздравление посмотреть",
+        "choices": [
+            {
+                "next_step": "boys_with_nobody_question_masks",
+                "text": "Маски-шоу",
+                "pic_src": ""
+            },
+            {
+                "next_step": "boys_with_nobody_question_pirat",
+                "text": "Пират",
+                "pic_src": ""
+            }
+        ],
+        "next_step": ""
+    },
+    "boys_with_nobody_question_masks": {
+        "src": "resources/gift_ideas/свои_подарки_маски.mp4",
+        "title": "Выберите карточку: она определит судьбу торта",
+        "choices": [
+            {
+                "next_step": "store_with_nobody",
+                "text": "карточка за тортом",
+                "pic_src": "resources/cards/карточка_за_тортом.jpg"
+            },
+            {
+                "next_step": "store_courier_with_nobody",
+                "text": "карточка московская правда",
+                "pic_src": "resources/cards/карточка_московская_правда.jpg"
+            }
+        ],
+        "next_step": ""
+    },
+    "boys_with_nobody_question_pirat": {
+        "src": "resources/gift_ideas/свои_подарки_пират.mp4",
+        "title": "Выберите карточку: она определит судьбу торта",
+        "choices": [
+            {
+                "next_step": "store_with_nobody",
+                "text": "карточка за тортом",
+                "pic_src": "resources/cards/карточка_за_тортом.jpg"
+            },
+            {
+                "next_step": "store_courier_with_nobody",
+                "text": "карточка московская правда",
+                "pic_src": "resources/cards/карточка_московская_правда.jpg"
+            }
+        ],
+        "next_step": ""
+    },
+    "boys_with_nobody_stand": {
+        "src": "resources/gift_ideas/свои_подарки_как_вставать.mp4",
+        "title": "Выберите, какое поздравление посмотреть",
+        "choices": [
+            {
+                "next_step": "boys_with_nobody_stand_masks",
+                "text": "Маски-шоу",
+                "pic_src": ""
+            },
+            {
+                "next_step": "boys_with_nobody_stand_pirat",
+                "text": "Пират",
+                "pic_src": ""
+            }
+        ],
+        "next_step": ""
+    },
+    "boys_with_nobody_stand_masks": {
+        "src": "resources/gift_ideas/свои_подарки_маски.mp4",
+        "title": "Выберите карточку: она определит судьбу торта",
+        "choices": [
+            {
+                "next_step": "store_with_nobody",
+                "text": "карточка за тортом",
+                "pic_src": "resources/cards/карточка_за_тортом.jpg"
+            },
+            {
+                "next_step": "store_courier_with_nobody",
+                "text": "карточка московская правда",
+                "pic_src": "resources/cards/карточка_московская_правда.jpg"
+            }
+        ],
+        "next_step": ""
+    },
+    "boys_with_nobody_stand_pirat": {
+        "src": "resources/gift_ideas/свои_подарки_пират.mp4",
+        "title": "Выберите карточку: она определит судьбу торта",
+        "choices": [
+            {
+                "next_step": "store_with_nobody",
+                "text": "карточка за тортом",
+                "pic_src": "resources/cards/карточка_за_тортом.jpg"
+            },
+            {
+                "next_step": "store_courier_with_nobody",
+                "text": "карточка московская правда",
+                "pic_src": "resources/cards/карточка_московская_правда.jpg"
+            }
+        ],
+        "next_step": ""
+    },
+    "gift_ideas_boys_with_arsen": {
+        "src": "resources/gift_ideas/свои_подарки_мальчики.mp4",
+        "title": "Что сделать Игнату?",
+        "choices": [
+            {
+                "next_step": "boys_with_arsen_late",
+                "text": "Спросить с Полины за опоздание",
+                "pic_src": ""
+            },
+            {
+                "next_step": "boys_with_arsen_question",
+                "text": "Спросить как дела",
+                "pic_src": ""
+            },
+            {
+                "next_step": "boys_with_arsen_stand",
+                "text": "Научить правильно вставать",
+                "pic_src": ""
+            }
+        ],
+        "next_step": ""
+    },
+    "boys_with_arsen_late": {
+        "src": "resources/gift_ideas/свои_подарки_доебался.mp4",
+        "title": "Выберите, какое поздравление посмотреть",
+        "choices": [
+            {
+                "next_step": "boys_with_arsen_late_masks",
+                "text": "Маски-шоу",
+                "pic_src": ""
+            },
+            {
+                "next_step": "boys_with_arsen_late_pirat",
+                "text": "Пират",
+                "pic_src": ""
+            }
+        ],
+        "next_step": ""
+    },
+    "boys_with_arsen_late_masks": {
+        "src": "resources/gift_ideas/свои_подарки_маски.mp4",
+        "title": "Выберите карточку: она определит судьбу торта",
+        "choices": [
+            {
+                "next_step": "store_with_arsen",
+                "text": "карточка за тортом",
+                "pic_src": "resources/cards/карточка_за_тортом.jpg"
+            },
+            {
+                "next_step": "store_courier_with_arsen",
+                "text": "карточка московская правда",
+                "pic_src": "resources/cards/карточка_московская_правда.jpg"
+            }
+        ],
+        "next_step": ""
+    },
+    "boys_with_arsen_late_pirat": {
+        "src": "resources/gift_ideas/свои_подарки_пират.mp4",
+        "title": "Выберите карточку: она определит судьбу торта",
+        "choices": [
+            {
+                "next_step": "store_with_arsen",
+                "text": "карточка за тортом",
+                "pic_src": "resources/cards/карточка_за_тортом.jpg"
+            },
+            {
+                "next_step": "store_courier_with_arsen",
+                "text": "карточка московская правда",
+                "pic_src": "resources/cards/карточка_московская_правда.jpg"
+            }
+        ],
+        "next_step": ""
+    },
+    "boys_with_arsen_question": {
+        "src": "resources/gift_ideas/свои_подарки_как_дела.mp4",
+        "title": "Выберите, какое поздравление посмотреть",
+        "choices": [
+            {
+                "next_step": "boys_with_arsen_question_masks",
+                "text": "Маски-шоу",
+                "pic_src": ""
+            },
+            {
+                "next_step": "boys_with_arsen_question_pirat",
+                "text": "Пират",
+                "pic_src": ""
+            }
+        ],
+        "next_step": ""
+    },
+    "boys_with_arsen_question_masks": {
+        "src": "resources/gift_ideas/свои_подарки_маски.mp4",
+        "title": "Выберите карточку: она определит судьбу торта",
+        "choices": [
+            {
+                "next_step": "store_with_arsen",
+                "text": "карточка за тортом",
+                "pic_src": "resources/cards/карточка_за_тортом.jpg"
+            },
+            {
+                "next_step": "store_courier_with_arsen",
+                "text": "карточка московская правда",
+                "pic_src": "resources/cards/карточка_московская_правда.jpg"
+            }
+        ],
+        "next_step": ""
+    },
+    "boys_with_arsen_question_pirat": {
+        "src": "resources/gift_ideas/свои_подарки_пират.mp4",
+        "title": "Выберите карточку: она определит судьбу торта",
+        "choices": [
+            {
+                "next_step": "store_with_arsen",
+                "text": "карточка за тортом",
+                "pic_src": "resources/cards/карточка_за_тортом.jpg"
+            },
+            {
+                "next_step": "store_courier_with_arsen",
+                "text": "карточка московская правда",
+                "pic_src": "resources/cards/карточка_московская_правда.jpg"
+            }
+        ],
+        "next_step": ""
+    },
+    "boys_with_arsen_stand": {
+        "src": "resources/gift_ideas/свои_подарки_как_вставать.mp4",
+        "title": "Выберите, какое поздравление посмотреть",
+        "choices": [
+            {
+                "next_step": "boys_with_arsen_stand_masks",
+                "text": "Маски-шоу",
+                "pic_src": ""
+            },
+            {
+                "next_step": "boys_with_arsen_stand_pirat",
+                "text": "Пират",
+                "pic_src": ""
+            }
+        ],
+        "next_step": ""
+    },
+    "boys_with_arsen_stand_masks": {
+        "src": "resources/gift_ideas/свои_подарки_маски.mp4",
+        "title": "Выберите карточку: она определит судьбу торта",
+        "choices": [
+            {
+                "next_step": "store_with_arsen",
+                "text": "карточка за тортом",
+                "pic_src": "resources/cards/карточка_за_тортом.jpg"
+            },
+            {
+                "next_step": "store_courier_with_arsen",
+                "text": "карточка московская правда",
+                "pic_src": "resources/cards/карточка_московская_правда.jpg"
+            }
+        ],
+        "next_step": ""
+    },
+    "boys_with_arsen_stand_pirat": {
+        "src": "resources/gift_ideas/свои_подарки_пират.mp4",
+        "title": "Выберите карточку: она определит судьбу торта",
+        "choices": [
+            {
+                "next_step": "store_with_arsen",
+                "text": "карточка за тортом",
+                "pic_src": "resources/cards/карточка_за_тортом.jpg"
+            },
+            {
+                "next_step": "store_courier_with_arsen",
+                "text": "карточка московская правда",
+                "pic_src": "resources/cards/карточка_московская_правда.jpg"
+            }
+        ],
+        "next_step": ""
+    },
+    "gift_ideas_boys_with_arine": {
+        "src": "resources/gift_ideas/свои_подарки_мальчики.mp4",
+        "title": "Что сделать Игнату?",
+        "choices": [
+            {
+                "next_step": "boys_with_arine_late",
+                "text": "Спросить с Полины за опоздание",
+                "pic_src": ""
+            },
+            {
+                "next_step": "boys_with_arine_question",
+                "text": "Спросить как дела",
+                "pic_src": ""
+            },
+            {
+                "next_step": "boys_with_arine_stand",
+                "text": "Научить правильно вставать",
+                "pic_src": ""
+            }
+        ],
+        "next_step": ""
+    },
+    "boys_with_arine_late": {
+        "src": "resources/gift_ideas/свои_подарки_доебался.mp4",
+        "title": "Выберите, какое поздравление посмотреть",
+        "choices": [
+            {
+                "next_step": "boys_with_arine_late_masks",
+                "text": "Маски-шоу",
+                "pic_src": ""
+            },
+            {
+                "next_step": "boys_with_arine_late_pirat",
+                "text": "Пират",
+                "pic_src": ""
+            }
+        ],
+        "next_step": ""
+    },
+    "boys_with_arine_late_masks": {
+        "src": "resources/gift_ideas/свои_подарки_маски.mp4",
+        "title": "Выберите карточку: она определит судьбу торта",
+        "choices": [
+            {
+                "next_step": "store_with_arine",
+                "text": "карточка за тортом",
+                "pic_src": "resources/cards/карточка_за_тортом.jpg"
+            },
+            {
+                "next_step": "store_courier_with_arine",
+                "text": "карточка московская правда",
+                "pic_src": "resources/cards/карточка_московская_правда.jpg"
+            }
+        ],
+        "next_step": ""
+    },
+    "boys_with_arine_late_pirat": {
+        "src": "resources/gift_ideas/свои_подарки_пират.mp4",
+        "title": "Выберите карточку: она определит судьбу торта",
+        "choices": [
+            {
+                "next_step": "store_with_arine",
+                "text": "карточка за тортом",
+                "pic_src": "resources/cards/карточка_за_тортом.jpg"
+            },
+            {
+                "next_step": "store_courier_with_arine",
+                "text": "карточка московская правда",
+                "pic_src": "resources/cards/карточка_московская_правда.jpg"
+            }
+        ],
+        "next_step": ""
+    },
+    "boys_with_arine_question": {
+        "src": "resources/gift_ideas/свои_подарки_как_дела.mp4",
+        "title": "Выберите, какое поздравление посмотреть",
+        "choices": [
+            {
+                "next_step": "boys_with_arine_question_masks",
+                "text": "Маски-шоу",
+                "pic_src": ""
+            },
+            {
+                "next_step": "boys_with_arine_question_pirat",
+                "text": "Пират",
+                "pic_src": ""
+            }
+        ],
+        "next_step": ""
+    },
+    "boys_with_arine_question_masks": {
+        "src": "resources/gift_ideas/свои_подарки_маски.mp4",
+        "title": "Выберите карточку: она определит судьбу торта",
+        "choices": [
+            {
+                "next_step": "store_with_arine",
+                "text": "карточка за тортом",
+                "pic_src": "resources/cards/карточка_за_тортом.jpg"
+            },
+            {
+                "next_step": "store_courier_with_arine",
+                "text": "карточка московская правда",
+                "pic_src": "resources/cards/карточка_московская_правда.jpg"
+            }
+        ],
+        "next_step": ""
+    },
+    "boys_with_arine_question_pirat": {
+        "src": "resources/gift_ideas/свои_подарки_пират.mp4",
+        "title": "Выберите карточку: она определит судьбу торта",
+        "choices": [
+            {
+                "next_step": "store_with_arine",
+                "text": "карточка за тортом",
+                "pic_src": "resources/cards/карточка_за_тортом.jpg"
+            },
+            {
+                "next_step": "store_courier_with_arine",
+                "text": "карточка московская правда",
+                "pic_src": "resources/cards/карточка_московская_правда.jpg"
+            }
+        ],
+        "next_step": ""
+    },
+    "boys_with_arine_stand": {
+        "src": "resources/gift_ideas/свои_подарки_как_вставать.mp4",
+        "title": "Выберите, какое поздравление посмотреть",
+        "choices": [
+            {
+                "next_step": "boys_with_arine_stand_masks",
+                "text": "Маски-шоу",
+                "pic_src": ""
+            },
+            {
+                "next_step": "boys_with_arine_stand_pirat",
+                "text": "Пират",
+                "pic_src": ""
+            }
+        ],
+        "next_step": ""
+    },
+    "boys_with_arine_stand_masks": {
+        "src": "resources/gift_ideas/свои_подарки_маски.mp4",
+        "title": "Выберите карточку: она определит судьбу торта",
+        "choices": [
+            {
+                "next_step": "store_with_arine",
+                "text": "карточка за тортом",
+                "pic_src": "resources/cards/карточка_за_тортом.jpg"
+            },
+            {
+                "next_step": "store_courier_with_arine",
+                "text": "карточка московская правда",
+                "pic_src": "resources/cards/карточка_московская_правда.jpg"
+            }
+        ],
+        "next_step": ""
+    },
+    "boys_with_arine_stand_pirat": {
+        "src": "resources/gift_ideas/свои_подарки_пират.mp4",
+        "title": "Выберите карточку: она определит судьбу торта",
+        "choices": [
+            {
+                "next_step": "store_with_arine",
+                "text": "карточка за тортом",
+                "pic_src": "resources/cards/карточка_за_тортом.jpg"
+            },
+            {
+                "next_step": "store_courier_with_arine",
+                "text": "карточка московская правда",
+                "pic_src": "resources/cards/карточка_московская_правда.jpg"
+            }
+        ],
+        "next_step": ""
+    },
+    "gift_ideas_boys_with_both": {
+        "src": "resources/gift_ideas/свои_подарки_мальчики.mp4",
+        "title": "Что сделать Игнату?",
+        "choices": [
+            {
+                "next_step": "boys_with_both_late",
+                "text": "Спросить с Полины за опоздание",
+                "pic_src": ""
+            },
+            {
+                "next_step": "boys_with_both_question",
+                "text": "Спросить как дела",
+                "pic_src": ""
+            },
+            {
+                "next_step": "boys_with_both_stand",
+                "text": "Научить правильно вставать",
+                "pic_src": ""
+            }
+        ],
+        "next_step": ""
+    },
+    "boys_with_both_late": {
+        "src": "resources/gift_ideas/свои_подарки_доебался.mp4",
+        "title": "Выберите, какое поздравление посмотреть",
+        "choices": [
+            {
+                "next_step": "boys_with_both_late_masks",
+                "text": "Маски-шоу",
+                "pic_src": ""
+            },
+            {
+                "next_step": "boys_with_both_late_pirat",
+                "text": "Пират",
+                "pic_src": ""
+            }
+        ],
+        "next_step": ""
+    },
+    "boys_with_both_late_masks": {
+        "src": "resources/gift_ideas/свои_подарки_маски.mp4",
+        "title": "Выберите карточку: она определит судьбу торта",
+        "choices": [
+            {
+                "next_step": "store_with_both",
+                "text": "карточка за тортом",
+                "pic_src": "resources/cards/карточка_за_тортом.jpg"
+            },
+            {
+                "next_step": "store_courier_with_both",
+                "text": "карточка московская правда",
+                "pic_src": "resources/cards/карточка_московская_правда.jpg"
+            }
+        ],
+        "next_step": ""
+    },
+    "boys_with_both_late_pirat": {
+        "src": "resources/gift_ideas/свои_подарки_пират.mp4",
+        "title": "Выберите карточку: она определит судьбу торта",
+        "choices": [
+            {
+                "next_step": "store_with_both",
+                "text": "карточка за тортом",
+                "pic_src": "resources/cards/карточка_за_тортом.jpg"
+            },
+            {
+                "next_step": "store_courier_with_both",
+                "text": "карточка московская правда",
+                "pic_src": "resources/cards/карточка_московская_правда.jpg"
+            }
+        ],
+        "next_step": ""
+    },
+    "boys_with_both_question": {
+        "src": "resources/gift_ideas/свои_подарки_как_дела.mp4",
+        "title": "Выберите, какое поздравление посмотреть",
+        "choices": [
+            {
+                "next_step": "boys_with_both_question_masks",
+                "text": "Маски-шоу",
+                "pic_src": ""
+            },
+            {
+                "next_step": "boys_with_both_question_pirat",
+                "text": "Пират",
+                "pic_src": ""
+            }
+        ],
+        "next_step": ""
+    },
+    "boys_with_both_question_masks": {
+        "src": "resources/gift_ideas/свои_подарки_маски.mp4",
+        "title": "Выберите карточку: она определит судьбу торта",
+        "choices": [
+            {
+                "next_step": "store_with_both",
+                "text": "карточка за тортом",
+                "pic_src": "resources/cards/карточка_за_тортом.jpg"
+            },
+            {
+                "next_step": "store_courier_with_both",
+                "text": "карточка московская правда",
+                "pic_src": "resources/cards/карточка_московская_правда.jpg"
+            }
+        ],
+        "next_step": ""
+    },
+    "boys_with_both_question_pirat": {
+        "src": "resources/gift_ideas/свои_подарки_пират.mp4",
+        "title": "Выберите карточку: она определит судьбу торта",
+        "choices": [
+            {
+                "next_step": "store_with_both",
+                "text": "карточка за тортом",
+                "pic_src": "resources/cards/карточка_за_тортом.jpg"
+            },
+            {
+                "next_step": "store_courier_with_both",
+                "text": "карточка московская правда",
+                "pic_src": "resources/cards/карточка_московская_правда.jpg"
+            }
+        ],
+        "next_step": ""
+    },
+    "boys_with_both_stand": {
+        "src": "resources/gift_ideas/свои_подарки_как_вставать.mp4",
+        "title": "Выберите, какое поздравление посмотреть",
+        "choices": [
+            {
+                "next_step": "boys_with_both_stand_masks",
+                "text": "Маски-шоу",
+                "pic_src": ""
+            },
+            {
+                "next_step": "boys_with_both_stand_pirat",
+                "text": "Пират",
+                "pic_src": ""
+            }
+        ],
+        "next_step": ""
+    },
+    "boys_with_both_stand_masks": {
+        "src": "resources/gift_ideas/свои_подарки_маски.mp4",
+        "title": "Выберите карточку: она определит судьбу торта",
+        "choices": [
+            {
+                "next_step": "store_with_both",
+                "text": "карточка за тортом",
+                "pic_src": "resources/cards/карточка_за_тортом.jpg"
+            },
+            {
+                "next_step": "store_courier_with_both",
+                "text": "карточка московская правда",
+                "pic_src": "resources/cards/карточка_московская_правда.jpg"
+            }
+        ],
+        "next_step": ""
+    },
+    "boys_with_both_stand_pirat": {
+        "src": "resources/gift_ideas/свои_подарки_пират.mp4",
+        "title": "Выберите карточку: она определит судьбу торта",
+        "choices": [
+            {
+                "next_step": "store_with_both",
+                "text": "карточка за тортом",
+                "pic_src": "resources/cards/карточка_за_тортом.jpg"
+            },
+            {
+                "next_step": "store_courier_with_both",
+                "text": "карточка московская правда",
+                "pic_src": "resources/cards/карточка_московская_правда.jpg"
             }
         ],
         "next_step": ""
