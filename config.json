@@ -75,19 +75,631 @@
     },
     "gether_all": {
         "src": "resources/gether/сбор_все_неловкое_молчание.mp4",
-        "title": "Выберите карточку",
+        "title": "Какой анекдот рассказать Паше?",
         "choices": [
             {
-                "next_step": "gether_all",
-                "text": "Показания соседки",
+                "next_step": "gether_joke_dragons",
+                "text": "Анекдот про драконов",
                 "pic_src": ""
             },
             {
-                "next_step": "gether_arsen",
-                "text": "Спящий Арсен",
+                "next_step": "gether_joke_space",
+                "text": "Анекдот про космос",
+                "pic_src": ""
+            },
+            {
+                "next_step": "gether_joke_turtle",
+                "text": "Анекдот про черепаха",
                 "pic_src": ""
             }
         ],
         "next_step": ""
+    },
+    "gether_joke_dragons": {
+        "src": "resources/gether/сбор_все_анекдот_драконы.mp4",
+        "title": "Выберите карточку: она определит, поучаствуют ли родственники в поздравлении",
+        "choices": [
+            {
+                "next_step": "discussion_yes",
+                "text": "Поздравление родственников",
+                "pic_src": "resources/cards/карточка_родственники.jpg"
+            },
+            {
+                "next_step": "discussion_arine_conflict",
+                "text": "Блокировка ксюши",
+                "pic_src": "resources/cards/блок_итог.jpg"
+            }
+        ],
+        "next_step": ""
+    },
+    "gether_joke_space": {
+        "src": "resources/gether/сбор_все_анекдот_космос.mp4",
+        "title": "Выберите карточку: она определит, поучаствуют ли родственники в поздравлении",
+        "choices": [
+            {
+                "next_step": "discussion_yes",
+                "text": "Поздравление родственников",
+                "pic_src": "resources/cards/карточка_родственники.jpg"
+            },
+            {
+                "next_step": "discussion_arine_conflict",
+                "text": "Блокировка ксюши",
+                "pic_src": "resources/cards/блок_итог.jpg"
+            }
+        ],
+        "next_step": ""
+    },
+    "gether_joke_turtle": {
+        "src": "resources/gether/сбор_все_анекдот_черепаха.mp4",
+        "title": "Выберите карточку: она определит, поучаствуют ли родственники в поздравлении",
+        "choices": [
+            {
+                "next_step": "discussion_yes",
+                "text": "Поздравление родственников",
+                "pic_src": "resources/cards/карточка_родственники.jpg"
+            },
+            {
+                "next_step": "discussion_arine_conflict",
+                "text": "Блокировка ксюши",
+                "pic_src": "resources/cards/блок_итог.jpg"
+            }
+        ],
+        "next_step": ""
+    },
+    "gether_arsen": {
+        "src": "resources/gether/сбор_арсен.mp4",
+        "title": "Что сделать Паше?",
+        "choices": [
+            {
+                "next_step": "gether_thought",
+                "text": "Продолжить думать",
+                "pic_src": ""
+            },
+            {
+                "next_step": "gether_deb",
+                "text": "Сделать деб",
+                "pic_src": ""
+            },
+            {
+                "next_step": "gether_attention",
+                "text": "Посетовать на то, что Арсен не пришёл",
+                "pic_src": ""
+            }
+        ],
+        "next_step": ""
+    },
+    "gether_thought": {
+        "src": "resources/gether/сбор_арсен_мысль.mp4",
+        "title": "Какую мысль Паши показать?",
+        "choices": [
+            {
+                "next_step": "gether_thought_golub",
+                "text": "Мысль про голубей",
+                "pic_src": ""
+            },
+            {
+                "next_step": "gether_thought_skuf",
+                "text": "Мысль про скуфство",
+                "pic_src": ""
+            },
+            {
+                "next_step": "gether_thought_hasbik",
+                "text": "Мысль про хасбика",
+                "pic_src": ""
+            }
+        ],
+        "next_step": ""
+    },
+    "gether_thought_golub": {
+        "src": "resources/gether/сбор_арсен_мысль_голуби.mp4",
+        "title": "Выберите карточку: она определит, поучаствуют ли родственники в поздравлении",
+        "choices": [
+            {
+                "next_step": "discussion_yes",
+                "text": "Поздравление родственников",
+                "pic_src": "resources/cards/карточка_родственники.jpg"
+            },
+            {
+                "next_step": "discussion_arine_conflict",
+                "text": "Блокировка ксюши",
+                "pic_src": "resources/cards/блок_итог.jpg"
+            }
+        ],
+        "next_step": ""
+    },
+    "gether_thought_skuf": {
+        "src": "resources/gether/сбор_арсен_мысль_скуф.mp4",
+        "title": "Выберите карточку: она определит, поучаствуют ли родственники в поздравлении",
+        "choices": [
+            {
+                "next_step": "discussion_yes",
+                "text": "Поздравление родственников",
+                "pic_src": "resources/cards/карточка_родственники.jpg"
+            },
+            {
+                "next_step": "discussion_arine_conflict",
+                "text": "Блокировка ксюши",
+                "pic_src": "resources/cards/блок_итог.jpg"
+            }
+        ],
+        "next_step": ""
+    },
+    "gether_thought_hasbik": {
+        "src": "resources/gether/сбор_арсен_мысль_хасбик.mp4",
+        "title": "Выберите карточку: она определит, поучаствуют ли родственники в поздравлении",
+        "choices": [
+            {
+                "next_step": "discussion_yes",
+                "text": "Поздравление родственников",
+                "pic_src": "resources/cards/карточка_родственники.jpg"
+            },
+            {
+                "next_step": "discussion_arine_conflict",
+                "text": "Блокировка ксюши",
+                "pic_src": "resources/cards/блок_итог.jpg"
+            }
+        ],
+        "next_step": ""
+    },
+    "gether_deb": {
+        "src": "resources/gether/сбор_арсен_деб.mp4",
+        "title": "Как отреагировать Игнату?",
+        "choices": [
+            {
+                "next_step": "gether_deb_ignore",
+                "text": "Проигнорировать",
+                "pic_src": ""
+            },
+            {
+                "next_step": "gether_deb_too",
+                "text": "Тоже сделать деб",
+                "pic_src": ""
+            },
+            {
+                "next_step": "gether_deb_agressive",
+                "text": "Наехать на пашу",
+                "pic_src": ""
+            }
+        ],
+        "next_step": ""
+    },
+    "gether_deb_ignore": {
+        "src": "resources/gether/сбор_арсен_деб_игнор.mp4",
+        "title": "Выберите карточку: она определит, поучаствуют ли родственники в поздравлении",
+        "choices": [
+            {
+                "next_step": "discussion_yes",
+                "text": "Поздравление родственников",
+                "pic_src": "resources/cards/карточка_родственники.jpg"
+            },
+            {
+                "next_step": "discussion_arine_conflict",
+                "text": "Блокировка ксюши",
+                "pic_src": "resources/cards/блок_итог.jpg"
+            }
+        ],
+        "next_step": ""
+    },
+    "gether_deb_too": {
+        "src": "resources/gether/сбор_арсен_деб_поддержал.mp4",
+        "title": "Выберите карточку: она определит, поучаствуют ли родственники в поздравлении",
+        "choices": [
+            {
+                "next_step": "discussion_yes",
+                "text": "Поздравление родственников",
+                "pic_src": "resources/cards/карточка_родственники.jpg"
+            },
+            {
+                "next_step": "discussion_arine_conflict",
+                "text": "Блокировка ксюши",
+                "pic_src": "resources/cards/блок_итог.jpg"
+            }
+        ],
+        "next_step": ""
+    },
+    "gether_deb_agressive": {
+        "src": "resources/gether/сбор_арсен_деб_попустил.mp4",
+        "title": "Выберите карточку: она определит, поучаствуют ли родственники в поздравлении",
+        "choices": [
+            {
+                "next_step": "discussion_yes",
+                "text": "Поздравление родственников",
+                "pic_src": "resources/cards/карточка_родственники.jpg"
+            },
+            {
+                "next_step": "discussion_arine_conflict",
+                "text": "Блокировка ксюши",
+                "pic_src": "resources/cards/блок_итог.jpg"
+            }
+        ],
+        "next_step": ""
+    },
+    "gether_attention": {
+        "src": "resources/gether/сбор_арсен_указать.mp4",
+        "title": "Как войти Арсену?",
+        "choices": [
+            {
+                "next_step": "gether_arsen_arestant",
+                "text": "Как в хату",
+                "pic_src": ""
+            },
+            {
+                "next_step": "gether_arsen_quite",
+                "text": "Войти вежливо",
+                "pic_src": ""
+            },
+            {
+                "next_step": "gether_arsen_drop",
+                "text": "Упасть на входе",
+                "pic_src": ""
+            }
+        ],
+        "next_step": ""
+    },
+    "gether_arsen_arestant": {
+        "src": "resources/gether/сбор_арсен_арестант.mp4",
+        "title": "Как ответить Арсену?",
+        "choices": [
+            {
+                "next_step": "gether_arsen_eat",
+                "text": "Схавать",
+                "pic_src": ""
+            },
+            {
+                "next_step": "gether_arsen_sorry",
+                "text": "Извиниться",
+                "pic_src": ""
+            },
+            {
+                "next_step": "gether_arsen_bad",
+                "text": "Нагрубить в ответ",
+                "pic_src": ""
+            }
+        ],
+        "next_step": ""
+    },
+    "gether_arsen_eat": {
+        "src": "resources/gether/сбор_арсен_схавал.mp4",
+        "title": "Выберите карточку: она определит, поучаствуют ли родственники в поздравлении",
+        "choices": [
+            {
+                "next_step": "discussion_yes",
+                "text": "Поздравление родственников",
+                "pic_src": "resources/cards/карточка_родственники.jpg"
+            },
+            {
+                "next_step": "discussion_arine_conflict",
+                "text": "Блокировка ксюши",
+                "pic_src": "resources/cards/блок_итог.jpg"
+            }
+        ],
+        "next_step": ""
+    },
+    "gether_arsen_sorry": {
+        "src": "resources/gether/сбор_арсен_извиняется.mp4",
+        "title": "Выберите карточку: она определит, поучаствуют ли родственники в поздравлении",
+        "choices": [
+            {
+                "next_step": "discussion_yes",
+                "text": "Поздравление родственников",
+                "pic_src": "resources/cards/карточка_родственники.jpg"
+            },
+            {
+                "next_step": "discussion_arine_conflict",
+                "text": "Блокировка ксюши",
+                "pic_src": "resources/cards/блок_итог.jpg"
+            }
+        ],
+        "next_step": ""
+    },
+    "gether_arsen_bad": {
+        "src": "resources/gether/сбор_арсен_ответить.mp4",
+        "title": "Выберите карточку: она определит, поучаствуют ли родственники в поздравлении",
+        "choices": [
+            {
+                "next_step": "discussion_yes_but_with_arsen",
+                "text": "Поздравление родственников",
+                "pic_src": "resources/cards/карточка_родственники.jpg"
+            },
+            {
+                "next_step": "discussion_arine_and_arsen_conflict",
+                "text": "Блокировка ксюши",
+                "pic_src": "resources/cards/блок_итог.jpg"
+            }
+        ],
+        "next_step": ""
+    },
+    "gether_arsen_quite": {
+        "src": "resources/gether/сбор_арсен_вежливо_вошел.mp4",
+        "title": "Как ответить Арсену?",
+        "choices": [
+            {
+                "next_step": "gether_arsen_eat",
+                "text": "Схавать",
+                "pic_src": ""
+            },
+            {
+                "next_step": "gether_arsen_sorry",
+                "text": "Извиниться",
+                "pic_src": ""
+            },
+            {
+                "next_step": "gether_arsen_bad",
+                "text": "Нагрубить в ответ",
+                "pic_src": ""
+            }
+        ],
+        "next_step": ""
+    },
+    "gether_arsen_drop": {
+        "src": "resources/gether/сбор_арсен_упал.mp4",
+        "title": "Как ответить Арсену?",
+        "choices": [
+            {
+                "next_step": "gether_arsen_eat",
+                "text": "Схавать",
+                "pic_src": ""
+            },
+            {
+                "next_step": "gether_arsen_sorry",
+                "text": "Извиниться",
+                "pic_src": ""
+            },
+            {
+                "next_step": "gether_arsen_bad",
+                "text": "Нагрубить в ответ",
+                "pic_src": ""
+            }
+        ],
+        "next_step": ""
+    },
+    "discussion_yes": {
+        "src": "resources/discussion/перед_поздравлением.mp4",
+        "title": "Какое поздравление посмотреть?",
+        "choices": [
+            {
+                "next_step": "congrats_from_mom",
+                "text": "Мамы",
+                "pic_src": ""
+            },
+            {
+                "next_step": "congrats_from_friend",
+                "text": "Подруги",
+                "pic_src": ""
+            },
+            {
+                "next_step": "congrats_from_sister",
+                "text": "Сестры",
+                "pic_src": ""
+            }
+        ],
+        "next_step": ""
+    },
+    "congrats_from_mom": {
+        "src": "resources/discussion/поздравление_мамы.mp4",
+        "title": "Выберите карточку: она определит, какой пол будет примой в придумывании идей",
+        "choices": [
+            {
+                "next_step": "gift_ideas_girls_with_nobody",
+                "text": "Девочки",
+                "pic_src": "resources/cards/карточка_показания_дылды.jpg"
+            },
+            {
+                "next_step": "gift_ideas_boys_with_nobody",
+                "text": "Мальчики",
+                "pic_src": "resources/cards/карточка_показания_полины.jpg"
+            }
+        ],
+        "next_step": ""
+    },
+    "congrats_from_friend": {
+        "src": "resources/discussion/поздравление_подруги.mp4",
+        "title": "Выберите карточку: она определит, какой пол будет примой в придумывании идей",
+        "choices": [
+            {
+                "next_step": "gift_ideas_girls_with_nobody",
+                "text": "Девочки",
+                "pic_src": "resources/cards/карточка_показания_дылды.jpg"
+            },
+            {
+                "next_step": "gift_ideas_boys_with_nobody",
+                "text": "Мальчики",
+                "pic_src": "resources/cards/карточка_показания_полины.jpg"
+            }
+        ],
+        "next_step": ""
+    },
+    "congrats_from_sister": {
+        "src": "resources/discussion/поздравление_сестры.mp4",
+        "title": "Выберите карточку: она определит, какой пол будет примой в придумывании идей",
+        "choices": [
+            {
+                "next_step": "gift_ideas_girls_with_nobody",
+                "text": "Девочки",
+                "pic_src": "resources/cards/карточка_показания_дылды.jpg"
+            },
+            {
+                "next_step": "gift_ideas_boys_with_nobody",
+                "text": "Мальчики",
+                "pic_src": "resources/cards/карточка_показания_полины.jpg"
+            }
+        ],
+        "next_step": ""
+    },
+    "discussion_yes_but_with_arsen": {
+        "src": "resources/discussion/перед_поздравлением.mp4",
+        "title": "Какое поздравление посмотреть?",
+        "choices": [
+            {
+                "next_step": "congrats_from_mom_conf_arsen",
+                "text": "Мамы",
+                "pic_src": ""
+            },
+            {
+                "next_step": "congrats_from_friend_conf_arsen",
+                "text": "Подруги",
+                "pic_src": ""
+            },
+            {
+                "next_step": "congrats_from_sister_conf_arsen",
+                "text": "Сестры",
+                "pic_src": ""
+            }
+        ],
+        "next_step": ""
+    },
+    "congrats_from_mom_conf_arsen": {
+        "src": "resources/discussion/поздравление_мамы.mp4",
+        "title": "Выберите карточку: она определит, какой пол будет примой в придумывании идей",
+        "choices": [
+            {
+                "next_step": "gift_ideas_girls_with_arsen",
+                "text": "Девочки",
+                "pic_src": "resources/cards/карточка_показания_дылды.jpg"
+            },
+            {
+                "next_step": "gift_ideas_boys_with_arsen",
+                "text": "Мальчики",
+                "pic_src": "resources/cards/карточка_показания_полины.jpg"
+            }
+        ],
+        "next_step": ""
+    },
+    "congrats_from_friend_conf_arsen": {
+        "src": "resources/discussion/поздравление_подруги.mp4",
+        "title": "Выберите карточку: она определит, какой пол будет примой в придумывании идей",
+        "choices": [
+            {
+                "next_step": "gift_ideas_girls_with_arsen",
+                "text": "Девочки",
+                "pic_src": "resources/cards/карточка_показания_дылды.jpg"
+            },
+            {
+                "next_step": "gift_ideas_boys_with_arsen",
+                "text": "Мальчики",
+                "pic_src": "resources/cards/карточка_показания_полины.jpg"
+            }
+        ],
+        "next_step": ""
+    },
+    "congrats_from_sister_conf_arsen": {
+        "src": "resources/discussion/поздравление_сестры.mp4",
+        "title": "Выберите карточку: она определит, какой пол будет примой в придумывании идей",
+        "choices": [
+            {
+                "next_step": "gift_ideas_girls_with_arsen",
+                "text": "Девочки",
+                "pic_src": "resources/cards/карточка_показания_дылды.jpg"
+            },
+            {
+                "next_step": "gift_ideas_boys_with_arsen",
+                "text": "Мальчики",
+                "pic_src": "resources/cards/карточка_показания_полины.jpg"
+            }
+        ],
+        "next_step": ""
+    },
+    "discussion_arine_conf": {
+        "src": "resources/discussion/спор_арина.mp4",
+        "title": "Что сделать Арине?",
+        "choices": [
+            {
+                "next_step": "discussion_conf_arine_over",
+                "text": "Согласиться",
+                "pic_src": ""
+            },
+            {
+                "next_step": "discussion_conf_arine_continue",
+                "text": "Не согласиться",
+                "pic_src": ""
+            }
+        ],
+        "next_step": ""
+    },
+    "discussion_conf_arine_over": {
+        "src": "resources/discussion/спор_арина_согласна.mp4",
+        "title": "Выберите карточку: она определит, какой пол будет примой в придумывании идей",
+        "choices": [
+            {
+                "next_step": "gift_ideas_girls_with_nobody",
+                "text": "Девочки",
+                "pic_src": "resources/cards/карточка_показания_дылды.jpg"
+            },
+            {
+                "next_step": "gift_ideas_boys_with_nobody",
+                "text": "Мальчики",
+                "pic_src": "resources/cards/карточка_показания_полины.jpg"
+            }
+        ],
+        "next_step": ""
+    },
+    "discussion_conf_arine_continue": {
+        "src": "resources/discussion/спор_арина_против.mp4",
+        "title": "Выберите карточку: она определит, какой пол будет примой в придумывании идей",
+        "choices": [
+            {
+                "next_step": "gift_ideas_girls_with_arine",
+                "text": "Девочки",
+                "pic_src": "resources/cards/карточка_показания_дылды.jpg"
+            },
+            {
+                "next_step": "gift_ideas_boys_with_arine",
+                "text": "Мальчики",
+                "pic_src": "resources/cards/карточка_показания_полины.jpg"
+            }
+        ],
+        "next_step": ""
+    },
+    "discussion_arine_and_arsen_conflict": {
+        "src": "resources/discussion/спор_арина.mp4",
+        "title": "Что сделать Арине?",
+        "choices": [
+            {
+                "next_step": "discussion_conf_arine_over_but_arsen_not",
+                "text": "Согласиться",
+                "pic_src": ""
+            },
+            {
+                "next_step": "discussion_conf_arine_and_arsen_continue",
+                "text": "Не согласиться",
+                "pic_src": ""
+            }
+        ],
+        "next_step": ""
+    },
+    "discussion_conf_arine_over_but_arsen_not": {
+        "src": "resources/discussion/спор_арина_согласна.mp4",
+        "title": "Выберите карточку: она определит, какой пол будет примой в придумывании идей",
+        "choices": [
+            {
+                "next_step": "gift_ideas_girls_with_arsen",
+                "text": "Девочки",
+                "pic_src": "resources/cards/карточка_показания_дылды.jpg"
+            },
+            {
+                "next_step": "gift_ideas_boys_with_arsen",
+                "text": "Мальчики",
+                "pic_src": "resources/cards/карточка_показания_полины.jpg"
+            }
+        ],
+        "next_step": ""
+    },
+    "discussion_conf_arine_and_arsen_continue": {
+        "src": "resources/discussion/спор_арина_против.mp4",
+        "title": "Выберите карточку: она определит, какой пол будет примой в придумывании идей",
+        "choices": [
+            {
+                "next_step": "gift_ideas_girls_with_both",
+                "text": "Девочки",
+                "pic_src": "resources/cards/карточка_показания_дылды.jpg"
+            },
+            {
+                "next_step": "gift_ideas_boys_with_both",
+                "text": "Мальчики",
+                "pic_src": "resources/cards/карточка_показания_полины.jpg"
+            }
+        ],
+        "next_step": ""
     }
+
 }
