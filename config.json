@@ -34,7 +34,7 @@
             {
                 "next_step": "gether_arsen",
                 "text": "Спящий Арсен",
-                "pic_src": "resources/cards/карточка_арсен_спящий.jpg"
+                "pic_src": "resources/cards/карточка_арсен_спящий.jpg"
             }
         ],
         "next_step": ""
