@@ -1,5 +1,5 @@
 {
-    "initial_step": "dream_start",
+    "initial_step": "girls_with_arine_tea_tfest",
     "dream_start": {
         "src": "resources/dream/сон_начало.mp4",
         "title": "Как поступить Ксюше?",
@@ -478,53 +478,20 @@
     "congrats_from_mom": {
         "src": "resources/discussion/поздравление_мамы.mp4",
         "title": "Выберите карточку: она определит, какой пол будет примой в придумывании идей",
-        "choices": [
-            {
-                "next_step": "gift_ideas_girls_with_nobody",
-                "text": "Девочки",
-                "pic_src": "resources/cards/карточка_показания_дылды.jpg"
-            },
-            {
-                "next_step": "gift_ideas_boys_with_nobody",
-                "text": "Мальчики",
-                "pic_src": "resources/cards/карточка_показания_полины.jpg"
-            }
-        ],
-        "next_step": ""
+        "choices": [],
+        "next_step": "gift_ideas_cards_conf_nobody"
     },
     "congrats_from_friend": {
         "src": "resources/discussion/поздравление_подруги.mp4",
         "title": "Выберите карточку: она определит, какой пол будет примой в придумывании идей",
-        "choices": [
-            {
-                "next_step": "gift_ideas_girls_with_nobody",
-                "text": "Девочки",
-                "pic_src": "resources/cards/карточка_показания_дылды.jpg"
-            },
-            {
-                "next_step": "gift_ideas_boys_with_nobody",
-                "text": "Мальчики",
-                "pic_src": "resources/cards/карточка_показания_полины.jpg"
-            }
-        ],
-        "next_step": ""
+        "choices": [],
+        "next_step": "gift_ideas_cards_conf_nobody"
     },
     "congrats_from_sister": {
         "src": "resources/discussion/поздравление_сестры.mp4",
         "title": "Выберите карточку: она определит, какой пол будет примой в придумывании идей",
-        "choices": [
-            {
-                "next_step": "gift_ideas_girls_with_nobody",
-                "text": "Девочки",
-                "pic_src": "resources/cards/карточка_показания_дылды.jpg"
-            },
-            {
-                "next_step": "gift_ideas_boys_with_nobody",
-                "text": "Мальчики",
-                "pic_src": "resources/cards/карточка_показания_полины.jpg"
-            }
-        ],
-        "next_step": ""
+        "choices": [],
+        "next_step": "gift_ideas_cards_conf_nobody"
     },
     "discussion_yes_but_with_arsen": {
         "src": "resources/discussion/перед_поздравлением.mp4",
@@ -548,8 +515,25 @@
         ],
         "next_step": ""
     },
-    "congrats_from_mom_conf_arsen": {
-        "src": "resources/discussion/поздравление_мамы.mp4",
+    "gift_ideas_cards_conf_arine": {
+        "src": "resources/gift_ideas/свои_подарки_карточки.mp4",
+        "title": "Выберите карточку: она определит, какой пол будет примой в придумывании идей",
+        "choices": [
+            {
+                "next_step": "gift_ideas_girls_with_arine",
+                "text": "Девочки",
+                "pic_src": "resources/cards/карточка_показания_дылды.jpg"
+            },
+            {
+                "next_step": "gift_ideas_boys_with_arine",
+                "text": "Мальчики",
+                "pic_src": "resources/cards/карточка_показания_полины.jpg"
+            }
+        ],
+        "next_step": ""
+    },
+    "gift_ideas_cards_conf_arsen": {
+        "src": "resources/gift_ideas/свои_подарки_карточки.mp4",
         "title": "Выберите карточку: она определит, какой пол будет примой в придумывании идей",
         "choices": [
             {
@@ -564,40 +548,76 @@
             }
         ],
         "next_step": ""
+    },
+    "gift_ideas_cards_conf_both": {
+        "src": "resources/gift_ideas/свои_подарки_карточки.mp4",
+        "title": "Выберите карточку: она определит, какой пол будет примой в придумывании идей",
+        "choices": [
+            {
+                "next_step": "gift_ideas_girls_with_both",
+                "text": "Девочки",
+                "pic_src": "resources/cards/карточка_показания_дылды.jpg"
+            },
+            {
+                "next_step": "gift_ideas_boys_with_both",
+                "text": "Мальчики",
+                "pic_src": "resources/cards/карточка_показания_полины.jpg"
+            }
+        ],
+        "next_step": ""
+    },
+    "gift_ideas_cards_conf_nobody": {
+        "src": "resources/gift_ideas/свои_подарки_карточки.mp4",
+        "title": "Выберите карточку: она определит, какой пол будет примой в придумывании идей",
+        "choices": [
+            {
+                "next_step": "gift_ideas_girls_with_nobody",
+                "text": "Девочки",
+                "pic_src": "resources/cards/карточка_показания_дылды.jpg"
+            },
+            {
+                "next_step": "gift_ideas_boys_with_nobody",
+                "text": "Мальчики",
+                "pic_src": "resources/cards/карточка_показания_полины.jpg"
+            }
+        ],
+        "next_step": ""
+    },
+    "congrats_from_mom_conf_arsen": {
+        "src": "resources/discussion/поздравление_мамы.mp4",
+        "title": "",
+        "choices": [],
+        "next_step": "gift_ideas_cards_conf_arsen"
     },
     "congrats_from_friend_conf_arsen": {
         "src": "resources/discussion/поздравление_подруги.mp4",
-        "title": "Выберите карточку: она определит, какой пол будет примой в придумывании идей",
-        "choices": [
-            {
-                "next_step": "gift_ideas_girls_with_arsen",
-                "text": "Девочки",
-                "pic_src": "resources/cards/карточка_показания_дылды.jpg"
-            },
-            {
-                "next_step": "gift_ideas_boys_with_arsen",
-                "text": "Мальчики",
-                "pic_src": "resources/cards/карточка_показания_полины.jpg"
-            }
-        ],
-        "next_step": ""
+        "title": "",
+        "choices": [],
+        "next_step": "gift_ideas_cards_conf_arsen"
     },
     "congrats_from_sister_conf_arsen": {
         "src": "resources/discussion/поздравление_сестры.mp4",
-        "title": "Выберите карточку: она определит, какой пол будет примой в придумывании идей",
-        "choices": [
-            {
-                "next_step": "gift_ideas_girls_with_arsen",
-                "text": "Девочки",
-                "pic_src": "resources/cards/карточка_показания_дылды.jpg"
-            },
-            {
-                "next_step": "gift_ideas_boys_with_arsen",
-                "text": "Мальчики",
-                "pic_src": "resources/cards/карточка_показания_полины.jpg"
-            }
-        ],
-        "next_step": ""
+        "title": "",
+        "choices": [],
+        "next_step": "gift_ideas_cards_conf_arsen"
+    },
+    "congrats_from_mom_conf_both": {
+        "src": "resources/discussion/поздравление_мамы.mp4",
+        "title": "",
+        "choices": [],
+        "next_step": "gift_ideas_cards_conf_both"
+    },
+    "congrats_from_friend_conf_both": {
+        "src": "resources/discussion/поздравление_подруги.mp4",
+        "title": "",
+        "choices": [],
+        "next_step": "gift_ideas_cards_conf_both"
+    },
+    "congrats_from_sister_conf_both": {
+        "src": "resources/discussion/поздравление_сестры.mp4",
+        "title": "",
+        "choices": [],
+        "next_step": "gift_ideas_cards_conf_both"
     },
     "discussion_arine_conflict": {
         "src": "resources/discussion/спор_арина.mp4",
@@ -619,36 +639,48 @@
     "discussion_conf_arine_over": {
         "src": "resources/discussion/спор_арина_согласна.mp4",
         "title": "Выберите карточку: она определит, какой пол будет примой в придумывании идей",
+        "choices": [],
+        "next_step": "discussion_yes"
+    },
+    "discussion_conf_arine_continue": {
+        "src": "resources/discussion/спор_арина_против.mp4",
+        "title": "Какое поздравление посмотреть?",
         "choices": [
             {
-                "next_step": "gift_ideas_girls_with_nobody",
-                "text": "Девочки",
-                "pic_src": "resources/cards/карточка_показания_дылды.jpg"
+                "next_step": "congrats_from_mom_conf_arine",
+                "text": "Мамы",
+                "pic_src": ""
             },
             {
-                "next_step": "gift_ideas_boys_with_nobody",
-                "text": "Мальчики",
-                "pic_src": "resources/cards/карточка_показания_полины.jpg"
+                "next_step": "congrats_from_friend_conf_arine",
+                "text": "Подруги",
+                "pic_src": ""
+            },
+            {
+                "next_step": "congrats_from_sister_conf_arine",
+                "text": "Сестры",
+                "pic_src": ""
             }
         ],
         "next_step": ""
     },
-    "discussion_conf_arine_continue": {
-        "src": "resources/discussion/спор_арина_против.mp4",
-        "title": "Выберите карточку: она определит, какой пол будет примой в придумывании идей",
-        "choices": [
-            {
-                "next_step": "gift_ideas_girls_with_arine",
-                "text": "Девочки",
-                "pic_src": "resources/cards/карточка_показания_дылды.jpg"
-            },
-            {
-                "next_step": "gift_ideas_boys_with_arine",
-                "text": "Мальчики",
-                "pic_src": "resources/cards/карточка_показания_полины.jpg"
-            }
-        ],
-        "next_step": ""
+    "congrats_from_mom_conf_arine": {
+        "src": "resources/discussion/поздравление_мамы.mp4",
+        "title": "",
+        "choices": [],
+        "next_step": "gift_ideas_cards_conf_arsen"
+    },
+    "congrats_from_sister_conf_arine": {
+        "src": "resources/discussion/поздравление_мамы.mp4",
+        "title": "",
+        "choices": [],
+        "next_step": "gift_ideas_cards_conf_arsen"
+    },
+    "congrats_from_friend_conf_arine": {
+        "src": "resources/discussion/поздравление_мамы.mp4",
+        "title": "",
+        "choices": [],
+        "next_step": "gift_ideas_cards_conf_arsen"
     },
     "discussion_arine_and_arsen_conflict": {
         "src": "resources/discussion/спор_арина.mp4",
@@ -669,34 +701,44 @@
     },
     "discussion_conf_arine_over_but_arsen_not": {
         "src": "resources/discussion/спор_арина_согласна.mp4",
-        "title": "Выберите карточку: она определит, какой пол будет примой в придумывании идей",
+        "title": "Какое поздравление посмотреть?",
         "choices": [
             {
-                "next_step": "gift_ideas_girls_with_arsen",
-                "text": "Девочки",
-                "pic_src": "resources/cards/карточка_показания_дылды.jpg"
+                "next_step": "congrats_from_mom_conf_arsen",
+                "text": "Мамы",
+                "pic_src": ""
             },
             {
-                "next_step": "gift_ideas_boys_with_arsen",
-                "text": "Мальчики",
-                "pic_src": "resources/cards/карточка_показания_полины.jpg"
+                "next_step": "congrats_from_friend_conf_arsen",
+                "text": "Подруги",
+                "pic_src": ""
+            },
+            {
+                "next_step": "congrats_from_sister_conf_arsen",
+                "text": "Сестры",
+                "pic_src": ""
             }
         ],
         "next_step": ""
     },
     "discussion_conf_arine_and_arsen_continue": {
         "src": "resources/discussion/спор_арина_против.mp4",
-        "title": "Выберите карточку: она определит, какой пол будет примой в придумывании идей",
+        "title": "Какое поздравление посмотреть?",
         "choices": [
             {
-                "next_step": "gift_ideas_girls_with_both",
-                "text": "Девочки",
-                "pic_src": "resources/cards/карточка_показания_дылды.jpg"
+                "next_step": "congrats_from_mom_conf_both",
+                "text": "Мамы",
+                "pic_src": ""
             },
             {
-                "next_step": "gift_ideas_boys_with_both",
-                "text": "Мальчики",
-                "pic_src": "resources/cards/карточка_показания_полины.jpg"
+                "next_step": "congrats_from_friend_conf_both",
+                "text": "Подруги",
+                "pic_src": ""
+            },
+            {
+                "next_step": "congrats_from_sister_conf_both",
+                "text": "Сестры",
+                "pic_src": ""
             }
         ],
         "next_step": ""
@@ -722,7 +764,7 @@
             }
         ],
         "next_step": ""
-    },
+    },    
     "girls_with_nobody_ring": {
         "src": "resources/gift_ideas/свои_подарки_хвастается.mp4",
         "title": "Выберите, какое поздравление посмотреть",
@@ -2100,5 +2142,798 @@
             }
         ],
         "next_step": ""
+    },
+
+
+
+    "store_courier_with_both": {
+        "src": "resources/store/курьер_идет.mp4",
+        "title": "Выберите, что произойдет",
+        "choices": [
+            {
+                "next_step": "store_courier_with_both_sneeze",
+                "text": "Курьер чихнет",
+                "pic_src": ""
+            },
+            {
+                "next_step": "store_courier_with_both_rap",
+                "text": "Курьер зачитает реп",
+                "pic_src": ""
+            }
+        ],
+        "next_step": ""
+    },
+    "store_courier_with_nobody": {
+        "src": "resources/store/курьер_идет.mp4",
+        "title": "Выберите, что произойдет",
+        "choices": [
+            {
+                "next_step": "store_courier_with_nobody_sneeze",
+                "text": "Курьер чихнет",
+                "pic_src": ""
+            },
+            {
+                "next_step": "store_courier_with_nobody_rap",
+                "text": "Курьер зачитает реп",
+                "pic_src": ""
+            }
+        ],
+        "next_step": ""
+    },
+    "store_courier_with_arsen": {
+        "src": "resources/store/курьер_идет.mp4",
+        "title": "Выберите, что произойдет",
+        "choices": [
+            {
+                "next_step": "store_courier_with_arsen_sneeze",
+                "text": "Курьер чихнет",
+                "pic_src": ""
+            },
+            {
+                "next_step": "store_courier_with_arsen_rap",
+                "text": "Курьер зачитает реп",
+                "pic_src": ""
+            }
+        ],
+        "next_step": ""
+    },
+    "store_courier_with_arine": {
+        "src": "resources/store/курьер_идет.mp4",
+        "title": "Выберите, что произойдет",
+        "choices": [
+            {
+                "next_step": "store_courier_with_both_sneeze",
+                "text": "Курьер чихнет",
+                "pic_src": ""
+            },
+            {
+                "next_step": "store_courier_with_both_rap",
+                "text": "Курьер зачитает реп",
+                "pic_src": ""
+            }
+        ],
+        "next_step": ""
+    },
+
+    "store_courier_with_both_sneeze": {
+        "src": "resources/store/курьер_чихнул_конфликт.mp4",
+        "title": "Выберите карточку: она определит, как прошло украшение комнаты",
+        "choices": [
+            {
+                "next_step": "",
+                "text": "",
+                "pic_src": "resources/cards/карточка_вероника_обнимает.jpg"
+            },
+            {
+                "next_step": "",
+                "text": "",
+                "pic_src": "resources/cards/карточка_показания_студента.jpg"
+            }
+        ],
+        "next_step": ""
+    },
+    "store_courier_with_nobody_sneeze": {
+        "src": "resources/store/курьер_чихнул_дружно.mp4",
+        "title": "Выберите карточку: она определит, как прошло украшение комнаты",
+        "choices": [
+            {
+                "next_step": "",
+                "text": "",
+                "pic_src": "resources/cards/карточка_украшение_комнаты.jpg"
+            },
+            {
+                "next_step": "",
+                "text": "",
+                "pic_src": "resources/cards/карточка_показания_студента.jpg"
+            }
+        ],
+        "next_step": ""
+    },
+    "store_courier_with_arsen_sneeze": {
+        "src": "resources/store/курьер_чихнул_конфликт.mp4",
+        "title": "Выберите карточку: она определит, как прошло украшение комнаты",
+        "choices": [
+            {
+                "next_step": "",
+                "text": "",
+                "pic_src": "resources/cards/карточка_вероника_обнимает.jpg"
+            },
+            {
+                "next_step": "",
+                "text": "",
+                "pic_src": "resources/cards/карточка_показания_студента.jpg"
+            }
+        ],
+        "next_step": ""
+    },
+    "store_courier_with_arine_sneeze": {
+        "src": "resources/store/курьер_чихнул_конфликт.mp4",
+        "title": "Выберите карточку: она определит, как прошло украшение комнаты",
+        "choices": [
+            {
+                "next_step": "",
+                "text": "",
+                "pic_src": "resources/cards/карточка_вероника_обнимает.jpg"
+            },
+            {
+                "next_step": "",
+                "text": "",
+                "pic_src": "resources/cards/карточка_показания_студента.jpg"
+            }
+        ],
+        "next_step": ""
+    },
+
+    "store_courier_with_both_rap": {
+        "src": "resources/store/курьер_реп_конфликт.mp4",
+        "title": "Выберите карточку: она определит, как прошло украшение комнаты",
+        "choices": [
+            {
+                "next_step": "",
+                "text": "",
+                "pic_src": "resources/cards/карточка_вероника_обнимает.jpg"
+            },
+            {
+                "next_step": "",
+                "text": "",
+                "pic_src": "resources/cards/карточка_показания_студента.jpg"
+            }
+        ],
+        "next_step": ""
+    },
+    "store_courier_with_nobody_rap": {
+        "src": "resources/store/курьер_реп_дружно.mp4",
+        "title": "Выберите карточку: она определит, как прошло украшение комнаты",
+        "choices": [
+            {
+                "next_step": "",
+                "text": "",
+                "pic_src": "resources/cards/карточка_украшение_комнаты.jpg"
+            },
+            {
+                "next_step": "",
+                "text": "",
+                "pic_src": "resources/cards/карточка_показания_студента.jpg"
+            }
+        ],
+        "next_step": ""
+    },
+    "store_courier_with_arsen_rap": {
+        "src": "resources/store/курьер_реп_конфликт.mp4",
+        "title": "Выберите карточку: она определит, как прошло украшение комнаты",
+        "choices": [
+            {
+                "next_step": "",
+                "text": "",
+                "pic_src": "resources/cards/карточка_вероника_обнимает.jpg"
+            },
+            {
+                "next_step": "",
+                "text": "",
+                "pic_src": "resources/cards/карточка_показания_студента.jpg"
+            }
+        ],
+        "next_step": ""
+    },
+    "store_courier_with_arine_rap": {
+        "src": "resources/store/курьер_реп_конфликт.mp4",
+        "title": "Выберите карточку: она определит, как прошло украшение комнаты",
+        "choices": [
+            {
+                "next_step": "",
+                "text": "",
+                "pic_src": "resources/cards/карточка_вероника_обнимает.jpg"
+            },
+            {
+                "next_step": "",
+                "text": "",
+                "pic_src": "resources/cards/карточка_показания_студента.jpg"
+            }
+        ],
+        "next_step": ""
+    },
+
+
+
+    "store_with_nobody": {
+        "src": "resources/store/торт_приходим_акции.mp4",
+        "title": "Посмотреть скидки на сырки?",
+        "choices": [
+            {
+                "next_step": "store_with_nobody_cheeze",
+                "text": "Посмотреть",
+                "pic_src": ""
+            },
+            {
+                "next_step": "store_with_nobody_cake",
+                "text": "Нет, пойдем выбирать торт",
+                "pic_src": ""
+            }
+        ],
+        "next_step": ""
+    },
+    "store_with_both": {
+        "src": "resources/store/торт_приходим_кукуруза.mp4",
+        "title": "Полина замечает, что Арина выбирает уксус. Что сказать?",
+        "choices": [
+            {
+                "next_step": "store_with_both_laught",
+                "text": "Обвинить в пьянстве",
+                "pic_src": ""
+            },
+            {
+                "next_step": "store_with_both_mouse",
+                "text": "Ты неправильно травишь мышей",
+                "pic_src": ""
+            }
+        ],
+        "next_step": ""
+    },
+    "store_with_arsen": {
+        "src": "resources/store/торт_приходим_ножи.mp4",
+        "title": "Игнат в ахуе... Зачем ему нож?",
+        "choices": [
+            {
+                "next_step": "store_with_arsen_cake",
+                "text": "Ты нож для торта выбираешь?",
+                "pic_src": ""
+            },
+            {
+                "next_step": "store_with_arsen_you",
+                "text": "Ты ж не убить нас собрался?",
+                "pic_src": ""
+            }
+        ],
+        "next_step": ""
+    },
+    "store_with_arine": {
+        "src": "resources/store/торт_приходим_кукуруза.mp4",
+        "title": "Полина замечает, что Арина выбирает уксус. Что сказать?",
+        "choices": [
+            {
+                "next_step": "store_with_arine_laught",
+                "text": "Обвинить в пьянстве",
+                "pic_src": ""
+            },
+            {
+                "next_step": "store_with_arine_mouse",
+                "text": "Ты неправильно травишь мышей",
+                "pic_src": ""
+            }
+        ],
+        "next_step": ""
+    },
+
+
+    "store_with_nobody_cheeze": {
+        "src": "resources/store/сырки_на_кассе.mp4",
+        "title": "Применить карту Ленты?",
+        "choices": [
+            {
+                "next_step": "store_with_nobody_cheeze_card",
+                "text": "Да",
+                "pic_src": ""
+            },
+            {
+                "next_step": "store_with_nobody_cheeze_nocard",
+                "text": "Нет",
+                "pic_src": ""
+            }
+        ],
+        "next_step": ""
+    },
+
+    "store_with_nobody_cheeze_card": {
+        "src": "resources/store/сырки_с_картой_дружно.mp4",
+        "title": "Выберите карточку: она определит, как прошло украшение комнаты",
+        "choices": [
+            {
+                "next_step": "",
+                "text": "",
+                "pic_src": "resources/cards/карточка_украшение_комнаты.jpg"
+            },
+            {
+                "next_step": "",
+                "text": "",
+                "pic_src": "resources/cards/карточка_показания_студента.jpg"
+            }
+        ],
+        "next_step": ""
+    },
+    "store_with_nobody_cheeze_nocard": {
+        "src": "resources/store/сырки_без_карты_дружно.mp4",
+        "title": "Выберите карточку: она определит, как прошло украшение комнаты",
+        "choices": [
+            {
+                "next_step": "",
+                "text": "",
+                "pic_src": "resources/cards/карточка_украшение_комнаты.jpg"
+            },
+            {
+                "next_step": "",
+                "text": "",
+                "pic_src": "resources/cards/карточка_показания_студента.jpg"
+            }
+        ],
+        "next_step": ""
+    },
+
+
+    "store_with_nobody_cake": {
+        "src": "resources/store/торт_арсен_выбрал_торт.mp4",
+        "title": "Применить карту Ленты?",
+        "choices": [
+            {
+                "next_step": "store_with_nobody_cake_card",
+                "text": "Да",
+                "pic_src": ""
+            },
+            {
+                "next_step": "store_with_nobody_cake_nocard",
+                "text": "Нет",
+                "pic_src": ""
+            }
+        ],
+        "next_step": ""
+    },
+
+    "store_with_nobody_cake_card": {
+        "src": "resources/store/торт_с_картой_дружно.mp4",
+        "title": "Выберите карточку: она определит, как прошло украшение комнаты",
+        "choices": [
+            {
+                "next_step": "",
+                "text": "",
+                "pic_src": "resources/cards/карточка_украшение_комнаты.jpg"
+            },
+            {
+                "next_step": "",
+                "text": "",
+                "pic_src": "resources/cards/карточка_показания_студента.jpg"
+            }
+        ],
+        "next_step": ""
+    },
+    "store_with_nobody_cake_nocard": {
+        "src": "resources/store/торт_без_карты_дружно.mp4",
+        "title": "Выберите карточку: она определит, как прошло украшение комнаты",
+        "choices": [
+            {
+                "next_step": "",
+                "text": "",
+                "pic_src": "resources/cards/карточка_украшение_комнаты.jpg"
+            },
+            {
+                "next_step": "",
+                "text": "",
+                "pic_src": "resources/cards/карточка_показания_студента.jpg"
+            }
+        ],
+        "next_step": ""
+    },
+
+
+
+    "store_with_both_laught": {
+        "src": "resources/store/торт_на_уксус_потянуло.mp4",
+        "title": "Игнат в ахуе... Зачем ему нож?",
+        "choices": [
+            {
+                "next_step": "store_with_both_knife_for_cake",
+                "text": "Ты нож для торта выбираешь?",
+                "pic_src": ""
+            },
+            {
+                "next_step": "store_with_both_knife_for_you",
+                "text": "Ты ж не убить нас собрался?",
+                "pic_src": ""
+            }
+        ],
+        "next_step": ""
+    },
+    "store_with_both_mouse": {
+        "src": "resources/store/торт_у_меня_особые_мыши.mp4",
+        "title": "Игнат в ахуе... Зачем ему нож?",
+        "choices": [
+            {
+                "next_step": "store_with_both_knife_for_cake",
+                "text": "Ты нож для торта выбираешь?",
+                "pic_src": ""
+            },
+            {
+                "next_step": "store_with_both_knife_for_you",
+                "text": "Ты ж не убить нас собрался?",
+                "pic_src": ""
+            }
+        ],
+        "next_step": ""
+    },
+
+    "store_with_both_knife_for_cake": {
+        "src": "resources/store/торт_нож_для_торта.mp4",
+        "title": "Посмотреть скидки на сырки?",
+        "choices": [
+            {
+                "next_step": "store_with_both_cheeze",
+                "text": "Посмотреть",
+                "pic_src": ""
+            },
+            {
+                "next_step": "store_with_both_cake",
+                "text": "Нет, пойдем выбирать торт",
+                "pic_src": ""
+            }
+        ],
+        "next_step": ""
+    },
+    "store_with_both_knife_for_you": {
+        "src": "resources/store/торт_нож_для_вас.mp4",
+        "title": "Посмотреть скидки на сырки?",
+        "choices": [
+            {
+                "next_step": "store_with_both_cheeze",
+                "text": "Посмотреть",
+                "pic_src": ""
+            },
+            {
+                "next_step": "store_with_both_cake",
+                "text": "Нет, пойдем выбирать торт",
+                "pic_src": ""
+            }
+        ],
+        "next_step": ""
+    },
+
+
+    "store_with_both_cheeze": {
+        "src": "resources/store/сырки_на_кассе.mp4",
+        "title": "Применить карту Ленты?",
+        "choices": [
+            {
+                "next_step": "store_with_both_cheeze_card",
+                "text": "Да",
+                "pic_src": ""
+            },
+            {
+                "next_step": "store_with_both_cheeze_nocard",
+                "text": "Нет",
+                "pic_src": ""
+            }
+        ],
+        "next_step": ""
+    },
+
+    "store_with_both_cheeze_card": {
+        "src": "resources/store/сырки_с_картой_конфликт.mp4",
+        "title": "Выберите карточку: она определит, как прошло украшение комнаты",
+        "choices": [
+            {
+                "next_step": "",
+                "text": "",
+                "pic_src": "resources/cards/карточка_вероника_обнимает.jpg"
+            },
+            {
+                "next_step": "",
+                "text": "",
+                "pic_src": "resources/cards/карточка_показания_студента.jpg"
+            }
+        ],
+        "next_step": ""
+    },
+    "store_with_both_cheeze_nocard": {
+        "src": "resources/store/сырки_без_карты_конфликт.mp4",
+        "title": "Выберите карточку: она определит, как прошло украшение комнаты",
+        "choices": [
+            {
+                "next_step": "",
+                "text": "",
+                "pic_src": "resources/cards/карточка_вероника_обнимает.jpg"
+            },
+            {
+                "next_step": "",
+                "text": "",
+                "pic_src": "resources/cards/карточка_показания_студента.jpg"
+            }
+        ],
+        "next_step": ""
+    },
+
+
+    "store_with_both_cake": {
+        "src": "resources/store/торт_арсен_выбрал_торт.mp4",
+        "title": "Применить карту Ленты?",
+        "choices": [
+            {
+                "next_step": "store_with_both_cake_card",
+                "text": "Да",
+                "pic_src": ""
+            },
+            {
+                "next_step": "store_with_both_cake_nocard",
+                "text": "Нет",
+                "pic_src": ""
+            }
+        ],
+        "next_step": ""
+    },
+
+    "store_with_both_cake_card": {
+        "src": "resources/store/торт_с_картой_конфликт.mp4",
+        "title": "Выберите карточку: она определит, как прошло украшение комнаты",
+        "choices": [
+            {
+                "next_step": "",
+                "text": "",
+                "pic_src": "resources/cards/карточка_вероника_обнимает.jpg"
+            },
+            {
+                "next_step": "",
+                "text": "",
+                "pic_src": "resources/cards/карточка_показания_студента.jpg"
+            }
+        ],
+        "next_step": ""
+    },
+    "store_with_both_cake_nocard": {
+        "src": "resources/store/торт_без_карты_конфликт.mp4",
+        "title": "Выберите карточку: она определит, как прошло украшение комнаты",
+        "choices": [
+            {
+                "next_step": "",
+                "text": "",
+                "pic_src": "resources/cards/карточка_вероника_обнимает.jpg"
+            },
+            {
+                "next_step": "",
+                "text": "",
+                "pic_src": "resources/cards/карточка_показания_студента.jpg"
+            }
+        ],
+        "next_step": ""
+    },
+
+
+    "store_with_arsen_cake": {
+        "src": "resources/store/торт_для_торта_торт.mp4",
+        "title": "Согласиться с выбором Арины?",
+        "choices": [
+            {
+                "next_step": "store_with_arsen_cake_agree",
+                "text": "Да",
+                "pic_src": ""
+            },
+            {
+                "next_step": "store_with_arsen_cake_disagree",
+                "text": "Нет",
+                "pic_src": ""
+            }
+        ],
+        "next_step": ""
+    },
+
+    "store_with_arsen_you": {
+        "src": "resources/store/торт_для_торта_торт.mp4",
+        "title": "Согласиться с выбором Арины?",
+        "choices": [
+            {
+                "next_step": "store_with_arsen_cake_agree",
+                "text": "Да",
+                "pic_src": ""
+            },
+            {
+                "next_step": "store_with_arsen_cake_disagree",
+                "text": "Нет",
+                "pic_src": ""
+            }
+        ],
+        "next_step": ""
+    },
+
+
+    "store_with_arsen_cake_agree": {
+        "src": "resources/store/торт_предложила_арина_одобрить.mp4",
+        "title": "Применить карту Ленты?",
+        "choices": [
+            {
+                "next_step": "store_with_arsen_cake_card",
+                "text": "Да",
+                "pic_src": ""
+            },
+            {
+                "next_step": "store_with_both_cake_nocard",
+                "text": "Нет",
+                "pic_src": ""
+            }
+        ],
+        "next_step": ""
+    },
+
+    "store_with_arsen_cake_disagree": {
+        "src": "resources/store/торт_предложила_арина_осудить.mp4",
+        "title": "Применить карту Ленты?",
+        "choices": [
+            {
+                "next_step": "store_with_both_cake_card",
+                "text": "Да",
+                "pic_src": ""
+            },
+            {
+                "next_step": "store_with_both_cake_nocard",
+                "text": "Нет",
+                "pic_src": ""
+            }
+        ],
+        "next_step": ""
+    },
+
+
+    "store_with_arsen_cake_card": {
+        "src": "resources/store/торт_с_картой_конфликт.mp4",
+        "title": "Выберите карточку: она определит, как прошло украшение комнаты",
+        "choices": [
+            {
+                "next_step": "",
+                "text": "",
+                "pic_src": "resources/cards/карточка_вероника_обнимает.jpg"
+            },
+            {
+                "next_step": "",
+                "text": "",
+                "pic_src": "resources/cards/карточка_показания_студента.jpg"
+            }
+        ],
+        "next_step": ""
+    },
+
+    "store_with_arsen_cake_nocard": {
+        "src": "resources/store/торт_без_карты_конфликт.mp4",
+        "title": "Выберите карточку: она определит, как прошло украшение комнаты",
+        "choices": [
+            {
+                "next_step": "",
+                "text": "",
+                "pic_src": "resources/cards/карточка_вероника_обнимает.jpg"
+            },
+            {
+                "next_step": "",
+                "text": "",
+                "pic_src": "resources/cards/карточка_показания_студента.jpg"
+            }
+        ],
+        "next_step": ""
+    },
+
+
+
+
+    "store_with_arine_laught": {
+        "src": "resources/store/торт_кукуруза_смейтесь_торт.mp4",
+        "title": "Согласиться с выбором Арcена?",
+        "choices": [
+            {
+                "next_step": "store_with_arine_cake_agree",
+                "text": "Да",
+                "pic_src": ""
+            },
+            {
+                "next_step": "store_with_arine_cake_disagree",
+                "text": "Нет",
+                "pic_src": ""
+            }
+        ],
+        "next_step": ""
+    },
+
+    "store_with_arine_mouse": {
+        "src": "resources/store/торт_кукуруза_мышт_торт.mp4",
+        "title": "Согласиться с выбором Арсена?",
+        "choices": [
+            {
+                "next_step": "store_with_arine_cake_agree",
+                "text": "Да",
+                "pic_src": ""
+            },
+            {
+                "next_step": "store_with_arine_cake_disagree",
+                "text": "Нет",
+                "pic_src": ""
+            }
+        ],
+        "next_step": ""
+    },
+
+
+    "store_with_arine_cake_agree": {
+        "src": "resources/store/торт_предложил_арсен_согласны.mp4",
+        "title": "Применить карту Ленты?",
+        "choices": [
+            {
+                "next_step": "store_with_arine_cake_card",
+                "text": "Да",
+                "pic_src": ""
+            },
+            {
+                "next_step": "store_with_arine_cake_nocard",
+                "text": "Нет",
+                "pic_src": ""
+            }
+        ],
+        "next_step": ""
+    },
+
+    "store_with_arine_cake_disagree": {
+        "src": "resources/store/торт_предложил_арсен_осудить.mp4",
+        "title": "Применить карту Ленты?",
+        "choices": [
+            {
+                "next_step": "store_with_both_cake_card",
+                "text": "Да",
+                "pic_src": ""
+            },
+            {
+                "next_step": "store_with_both_cake_nocard",
+                "text": "Нет",
+                "pic_src": ""
+            }
+        ],
+        "next_step": ""
+    },
+
+
+    "store_with_arine_cake_card": {
+        "src": "resources/store/торт_с_картой_конфликт.mp4",
+        "title": "Выберите карточку: она определит, как прошло украшение комнаты",
+        "choices": [
+            {
+                "next_step": "",
+                "text": "",
+                "pic_src": "resources/cards/карточка_вероника_обнимает.jpg"
+            },
+            {
+                "next_step": "",
+                "text": "",
+                "pic_src": "resources/cards/карточка_показания_студента.jpg"
+            }
+        ],
+        "next_step": ""
+    },
+    
+    "store_with_arine_cake_nocard": {
+        "src": "resources/store/торт_без_карты_конфликт.mp4",
+        "title": "Выберите карточку: она определит, как прошло украшение комнаты",
+        "choices": [
+            {
+                "next_step": "",
+                "text": "",
+                "pic_src": "resources/cards/карточка_вероника_обнимает.jpg"
+            },
+            {
+                "next_step": "",
+                "text": "",
+                "pic_src": "resources/cards/карточка_показания_студента.jpg"
+            }
+        ],
+        "next_step": ""
     }
+    
 }

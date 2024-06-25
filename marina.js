@@ -120,6 +120,10 @@ const videoController = {
     player: videojs('videoPlayer'),
 
     setAutoNextStep: function(step_id) {
+
+        this.player.off('ended');
+        this.player.off('timeupdate');
+
         if (step_id) {
           
             this.player.on('ended', () => { stepController.nextStep(step_id) });
