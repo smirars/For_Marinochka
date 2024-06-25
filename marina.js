@@ -1,6 +1,7 @@
 
 const stepController = {
     configName: "config.json",
+    stepStack: [],
     config: null,
 
     getStep: function(step_id) {
@@ -17,12 +18,16 @@ const stepController = {
     },
 
     nextStep: function(step_id, is_initial_step = false) {
-        let step = this.getStep(step_id)
-    
-        if (step.choices.length > 0 && step.next_step)
-            console.warn("WARNING: choices and next_step are both not empty! step_id:", step_id)
 
         
+        let step = this.getStep(step_id)
+
+        if (step.choices.length > 0 && step.next_step)
+            console.warn("WARNING: choices and next_step are both not empty! step_id:", step_id)
+        
+        if (!step.next_step)
+            this.stepStack.push(step_id)
+
         videoController.setAutoNextStep(step.next_step)
         overlayController.clean()
         overlayController.setTitle(step.title)
@@ -37,6 +42,17 @@ const stepController = {
             videoController.playVideo() 
     },
 
+    previusStep: function() {
+        console.log("previusStep:", this.stepStack)
+        this.stepStack.pop();
+        if (this.stepStack.length > 0) {
+            this.nextStep(this.stepStack.pop());
+            videoController.setVideoToHalfSecondBeforeEnd()
+        } else {
+            this.nextStep(this.config.initial_step);
+        }
+    },
+
     init: function() {
   
         fetch(this.configName)
@@ -48,6 +64,10 @@ const stepController = {
         })
         .then(data => {
             this.config = data;
+            const previusStepButton = document.getElementById('previusStep');
+            previusStepButton.onclick = () => {
+                stepController.previusStep()
+            };
             videoPlayer.appendChild(overlayController.overlay);
             this.nextStep(this.config.initial_step, true)
         })
@@ -138,7 +158,14 @@ const videoController = {
             });
 
         }
-    }, 
+    },
+
+    setVideoToHalfSecondBeforeEnd: function() {
+        const duration = this.player.duration();
+        if (duration > 0.5) {
+            this.player.currentTime(duration - 0.5);
+        }
+    },
 
     setVideoSrc: function(src) {
         this.player.src({ type: 'application/x-mpegURL', src: src });
