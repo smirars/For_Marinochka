@@ -1,5 +1,5 @@
 {
-    "initial_step": "girls_with_arine_tea_tfest",
+    "initial_step": "dream_start",
     "dream_start": {
         "src": "resources/dream/сон_начало.mp4",
         "title": "Как поступить Ксюше?",
@@ -2220,12 +2220,12 @@
         "title": "Выберите карточку: она определит, как прошло украшение комнаты",
         "choices": [
             {
-                "next_step": "",
+                "next_step": "preparing_with_both_speach",
                 "text": "",
                 "pic_src": "resources/cards/карточка_вероника_обнимает.jpg"
             },
             {
-                "next_step": "",
+                "next_step": "preparing_with_both",
                 "text": "",
                 "pic_src": "resources/cards/карточка_показания_студента.jpg"
             }
@@ -2237,12 +2237,12 @@
         "title": "Выберите карточку: она определит, как прошло украшение комнаты",
         "choices": [
             {
-                "next_step": "",
+                "next_step": "preparing_with_nobody",
                 "text": "",
                 "pic_src": "resources/cards/карточка_украшение_комнаты.jpg"
             },
             {
-                "next_step": "",
+                "next_step": "preparing_with_nobody_poline",
                 "text": "",
                 "pic_src": "resources/cards/карточка_показания_студента.jpg"
             }
@@ -2254,12 +2254,12 @@
         "title": "Выберите карточку: она определит, как прошло украшение комнаты",
         "choices": [
             {
-                "next_step": "",
+                "next_step": "preparing_with_arsen_speach",
                 "text": "",
                 "pic_src": "resources/cards/карточка_вероника_обнимает.jpg"
             },
             {
-                "next_step": "",
+                "next_step": "preparing_with_arsen",
                 "text": "",
                 "pic_src": "resources/cards/карточка_показания_студента.jpg"
             }
@@ -2271,12 +2271,12 @@
         "title": "Выберите карточку: она определит, как прошло украшение комнаты",
         "choices": [
             {
-                "next_step": "",
+                "next_step": "preparing_with_arine_speach",
                 "text": "",
                 "pic_src": "resources/cards/карточка_вероника_обнимает.jpg"
             },
             {
-                "next_step": "",
+                "next_step": "preparing_with_arine",
                 "text": "",
                 "pic_src": "resources/cards/карточка_показания_студента.jpg"
             }
@@ -2289,12 +2289,12 @@
         "title": "Выберите карточку: она определит, как прошло украшение комнаты",
         "choices": [
             {
-                "next_step": "",
+                "next_step": "preparing_with_both_speach",
                 "text": "",
                 "pic_src": "resources/cards/карточка_вероника_обнимает.jpg"
             },
             {
-                "next_step": "",
+                "next_step": "preparing_with_both",
                 "text": "",
                 "pic_src": "resources/cards/карточка_показания_студента.jpg"
             }
@@ -2306,12 +2306,12 @@
         "title": "Выберите карточку: она определит, как прошло украшение комнаты",
         "choices": [
             {
-                "next_step": "",
+                "next_step": "preparing_with_nobody",
                 "text": "",
                 "pic_src": "resources/cards/карточка_украшение_комнаты.jpg"
             },
             {
-                "next_step": "",
+                "next_step": "preparing_with_nobody_poline",
                 "text": "",
                 "pic_src": "resources/cards/карточка_показания_студента.jpg"
             }
@@ -2323,12 +2323,12 @@
         "title": "Выберите карточку: она определит, как прошло украшение комнаты",
         "choices": [
             {
-                "next_step": "",
+                "next_step": "preparing_with_arsen_speach",
                 "text": "",
                 "pic_src": "resources/cards/карточка_вероника_обнимает.jpg"
             },
             {
-                "next_step": "",
+                "next_step": "preparing_with_arsen",
                 "text": "",
                 "pic_src": "resources/cards/карточка_показания_студента.jpg"
             }
@@ -2340,12 +2340,12 @@
         "title": "Выберите карточку: она определит, как прошло украшение комнаты",
         "choices": [
             {
-                "next_step": "",
+                "next_step": "preparing_with_arine_speach",
                 "text": "",
                 "pic_src": "resources/cards/карточка_вероника_обнимает.jpg"
             },
             {
-                "next_step": "",
+                "next_step": "preparing_with_arine",
                 "text": "",
                 "pic_src": "resources/cards/карточка_показания_студента.jpg"
             }
@@ -2448,12 +2448,12 @@
         "title": "Выберите карточку: она определит, как прошло украшение комнаты",
         "choices": [
             {
-                "next_step": "",
+                "next_step": "preparing_with_nobody",
                 "text": "",
                 "pic_src": "resources/cards/карточка_украшение_комнаты.jpg"
             },
             {
-                "next_step": "",
+                "next_step": "preparing_with_nobody_poline",
                 "text": "",
                 "pic_src": "resources/cards/карточка_показания_студента.jpg"
             }
@@ -2465,12 +2465,12 @@
         "title": "Выберите карточку: она определит, как прошло украшение комнаты",
         "choices": [
             {
-                "next_step": "",
+                "next_step": "preparing_with_nobody",
                 "text": "",
                 "pic_src": "resources/cards/карточка_украшение_комнаты.jpg"
             },
             {
-                "next_step": "",
+                "next_step": "preparing_with_nobody_poline",
                 "text": "",
                 "pic_src": "resources/cards/карточка_показания_студента.jpg"
             }
@@ -2502,12 +2502,12 @@
         "title": "Выберите карточку: она определит, как прошло украшение комнаты",
         "choices": [
             {
-                "next_step": "",
+                "next_step": "preparing_with_nobody",
                 "text": "",
                 "pic_src": "resources/cards/карточка_украшение_комнаты.jpg"
             },
             {
-                "next_step": "",
+                "next_step": "preparing_with_nobody_poline",
                 "text": "",
                 "pic_src": "resources/cards/карточка_показания_студента.jpg"
             }
@@ -2519,12 +2519,12 @@
         "title": "Выберите карточку: она определит, как прошло украшение комнаты",
         "choices": [
             {
-                "next_step": "",
+                "next_step": "preparing_with_nobody",
                 "text": "",
                 "pic_src": "resources/cards/карточка_украшение_комнаты.jpg"
             },
             {
-                "next_step": "",
+                "next_step": "preparing_with_nobody_poline",
                 "text": "",
                 "pic_src": "resources/cards/карточка_показания_студента.jpg"
             }
@@ -2628,12 +2628,12 @@
         "title": "Выберите карточку: она определит, как прошло украшение комнаты",
         "choices": [
             {
-                "next_step": "",
+                "next_step": "preparing_with_both_speach",
                 "text": "",
                 "pic_src": "resources/cards/карточка_вероника_обнимает.jpg"
             },
             {
-                "next_step": "",
+                "next_step": "preparing_with_both",
                 "text": "",
                 "pic_src": "resources/cards/карточка_показания_студента.jpg"
             }
@@ -2645,12 +2645,12 @@
         "title": "Выберите карточку: она определит, как прошло украшение комнаты",
         "choices": [
             {
-                "next_step": "",
+                "next_step": "preparing_with_both_speach",
                 "text": "",
                 "pic_src": "resources/cards/карточка_вероника_обнимает.jpg"
             },
             {
-                "next_step": "",
+                "next_step": "preparing_with_both",
                 "text": "",
                 "pic_src": "resources/cards/карточка_показания_студента.jpg"
             }
@@ -2682,12 +2682,12 @@
         "title": "Выберите карточку: она определит, как прошло украшение комнаты",
         "choices": [
             {
-                "next_step": "",
+                "next_step": "preparing_with_both_speach",
                 "text": "",
                 "pic_src": "resources/cards/карточка_вероника_обнимает.jpg"
             },
             {
-                "next_step": "",
+                "next_step": "preparing_with_both",
                 "text": "",
                 "pic_src": "resources/cards/карточка_показания_студента.jpg"
             }
@@ -2699,12 +2699,12 @@
         "title": "Выберите карточку: она определит, как прошло украшение комнаты",
         "choices": [
             {
-                "next_step": "",
+                "next_step": "preparing_with_both_speach",
                 "text": "",
                 "pic_src": "resources/cards/карточка_вероника_обнимает.jpg"
             },
             {
-                "next_step": "",
+                "next_step": "preparing_with_both",
                 "text": "",
                 "pic_src": "resources/cards/карточка_показания_студента.jpg"
             }
@@ -2792,12 +2792,12 @@
         "title": "Выберите карточку: она определит, как прошло украшение комнаты",
         "choices": [
             {
-                "next_step": "",
+                "next_step": "preparing_with_arsen_speach",
                 "text": "",
                 "pic_src": "resources/cards/карточка_вероника_обнимает.jpg"
             },
             {
-                "next_step": "",
+                "next_step": "preparing_with_arsen",
                 "text": "",
                 "pic_src": "resources/cards/карточка_показания_студента.jpg"
             }
@@ -2810,12 +2810,12 @@
         "title": "Выберите карточку: она определит, как прошло украшение комнаты",
         "choices": [
             {
-                "next_step": "",
+                "next_step": "preparing_with_arsen_speach",
                 "text": "",
                 "pic_src": "resources/cards/карточка_вероника_обнимает.jpg"
             },
             {
-                "next_step": "",
+                "next_step": "preparing_with_arsen",
                 "text": "",
                 "pic_src": "resources/cards/карточка_показания_студента.jpg"
             }
@@ -2905,12 +2905,12 @@
         "title": "Выберите карточку: она определит, как прошло украшение комнаты",
         "choices": [
             {
-                "next_step": "",
+                "next_step": "preparing_with_arine_speach",
                 "text": "",
                 "pic_src": "resources/cards/карточка_вероника_обнимает.jpg"
             },
             {
-                "next_step": "",
+                "next_step": "preparing_with_arine",
                 "text": "",
                 "pic_src": "resources/cards/карточка_показания_студента.jpg"
             }
@@ -2923,17 +2923,599 @@
         "title": "Выберите карточку: она определит, как прошло украшение комнаты",
         "choices": [
             {
-                "next_step": "",
+                "next_step": "preparing_with_arine_speach",
                 "text": "",
                 "pic_src": "resources/cards/карточка_вероника_обнимает.jpg"
             },
             {
-                "next_step": "",
+                "next_step": "preparing_with_arine",
                 "text": "",
                 "pic_src": "resources/cards/карточка_показания_студента.jpg"
             }
         ],
         "next_step": ""
-    }
+    },
     
+
+
+    "preparing_with_nobody_poline": {
+        "src": "resources/preparing/украшения_арсен_стих.mp4",
+        "title": "Ребята собрались украшать комнату. Под какую песню?",
+        "choices": [],
+        "next_step": "preparing_with_nobody"
+    },
+
+    "preparing_with_nobody": {
+        "src": "resources/discussion/перед_поздравлением.mp4",
+        "title": "Ребята собрались украшать комнату. Под какую песню?",
+        "choices": [
+            {
+                "next_step": "preparing_with_nobody_run",
+                "text": "Смешарики. Погоня.",
+                "pic_src": ""
+            },
+            {
+                "next_step": "preparing_with_nobody_france",
+                "text": "Tour de France",
+                "pic_src": ""
+            },
+            {
+                "next_step": "preparing_with_nobody_love",
+                "text": "Сука любовь",
+                "pic_src": ""
+            },
+            {
+                "next_step": "preparing_with_nobody_childhood",
+                "text": "Юность",
+                "pic_src": ""
+            }
+        ],
+        "next_step": ""
+    },
+
+    "preparing_with_both": {
+        "src": "resources/preparing/украшения_договариваются_сразу.mp4",
+        "title": "Какой метод убийства выбрать?",
+        "choices": [
+            {
+                "next_step": "preparing_corn",
+                "text": "Отравить кукурузой",
+                "pic_src": ""
+            },
+            {
+                "next_step": "preparing_knife",
+                "text": "Устроить резню",
+                "pic_src": ""
+            }
+        ],
+        "next_step": ""
+    },
+
+    "preparing_with_both_speach": {
+        "src": "resources/preparing/украшение_речь.mp4",
+        "title": "Вероника хочет поддержать ребят речью. Какую использовать?",
+        "choices": [
+            {
+                "next_step": "preparing_speach_mom_not_work",
+                "text": "Добрая утешительная речь",
+                "pic_src": ""
+            },
+            {
+                "next_step": "preparing_speach_dad",
+                "text": "Жесткая отцовская речь",
+                "pic_src": ""
+            }
+        ],
+        "next_step": ""
+    },
+
+
+    "preparing_with_arsen": {
+        "src": "resources/preparing/украшения_договариваются_арсен_жалуется.mp4",
+        "title": "Что ответить Арине?",
+        "choices": [
+            {
+                "next_step": "preparing_with_arsen_quite",
+                "text": "Успокоить Арсена",
+                "pic_src": ""
+            },
+            {
+                "next_step": "preparing_with_arsen_kill",
+                "text": "Они реально заебали",
+                "pic_src": ""
+            }
+        ],
+        "next_step": ""
+    },
+
+    "preparing_with_arsen_quite": {
+        "src": "resources/preparing/украшения_договариваются_арсен_жалуется_успокаивает.mp4",
+        "title": "Ребята собрались украшать комнату. Под какую песню?",
+        "choices": [
+            {
+                "next_step": "preparing_with_nobody_run",
+                "text": "Смешарики. Погоня.",
+                "pic_src": ""
+            },
+            {
+                "next_step": "preparing_with_nobody_france",
+                "text": "Tour de France",
+                "pic_src": ""
+            },
+            {
+                "next_step": "preparing_with_nobody_love",
+                "text": "Сука любовь",
+                "pic_src": ""
+            },
+            {
+                "next_step": "preparing_with_nobody_childhood",
+                "text": "Юность",
+                "pic_src": ""
+            }
+        ],
+        "next_step": ""
+    },
+
+    "preparing_with_arsen_kill": {
+        "src": "resources/preparing/украшения_договариваются_арсен_жалуется_убить.mp4",
+        "title": "Какой метод убийства выбрать?",
+        "choices": [
+            {
+                "next_step": "preparing_corn",
+                "text": "Отравить кукурузой",
+                "pic_src": ""
+            },
+            {
+                "next_step": "preparing_knife",
+                "text": "Устроить резню",
+                "pic_src": ""
+            }
+        ],
+        "next_step": ""
+    },
+
+
+    "preparing_with_arsen_speach": {
+        "src": "resources/preparing/украшение_речь.mp4",
+        "title": "Вероника хочет поддержать ребят речью. Какую использовать?",
+        "choices": [
+            {
+                "next_step": "preparing_speach_mom",
+                "text": "Добрая утешительная речь",
+                "pic_src": ""
+            },
+            {
+                "next_step": "preparing_speach_dad",
+                "text": "Жесткая отцовская речь",
+                "pic_src": ""
+            }
+        ],
+        "next_step": ""
+    },
+
+
+    "preparing_with_arine": {
+        "src": "resources/preparing/украшения_договариваются_арина_жалуется.mp4",
+        "title": "Что ответить Арсену?",
+        "choices": [
+            {
+                "next_step": "preparing_with_arine_quite",
+                "text": "Успокоить Арину",
+                "pic_src": ""
+            },
+            {
+                "next_step": "preparing_with_arine_kill",
+                "text": "Они реально заебали",
+                "pic_src": ""
+            }
+        ],
+        "next_step": ""
+    },
+
+    "preparing_with_arine_quite": {
+        "src": "resources/preparing/украшения_договариваются_арсен_успокаивает.mp4",
+        "title": "Ребята собрались украшать комнату. Под какую песню?",
+        "choices": [
+            {
+                "next_step": "preparing_with_nobody_run",
+                "text": "Смешарики. Погоня.",
+                "pic_src": ""
+            },
+            {
+                "next_step": "preparing_with_nobody_france",
+                "text": "Tour de France",
+                "pic_src": ""
+            },
+            {
+                "next_step": "preparing_with_nobody_love",
+                "text": "Сука любовь",
+                "pic_src": ""
+            },
+            {
+                "next_step": "preparing_with_nobody_childhood",
+                "text": "Юность",
+                "pic_src": ""
+            }
+        ],
+        "next_step": ""
+    },
+
+    "preparing_with_arine_kill": {
+        "src": "resources/preparing/украшения_договариваются_арина_убить.mp4",
+        "title": "Какой метод убийства выбрать?",
+        "choices": [
+            {
+                "next_step": "preparing_corn",
+                "text": "Отравить кукурузой",
+                "pic_src": ""
+            },
+            {
+                "next_step": "preparing_knife",
+                "text": "Устроить резню",
+                "pic_src": ""
+            }
+        ],
+        "next_step": ""
+    },
+
+
+    "preparing_with_arine_speach": {
+        "src": "resources/preparing/украшение_речь.mp4",
+        "title": "Вероника хочет поддержать ребят речью. Какую использовать?",
+        "choices": [
+            {
+                "next_step": "preparing_speach_mom",
+                "text": "Добрая утешительная речь",
+                "pic_src": ""
+            },
+            {
+                "next_step": "preparing_speach_dad",
+                "text": "Жесткая отцовская речь",
+                "pic_src": ""
+            }
+        ],
+        "next_step": ""
+    },
+
+
+
+    "preparing_speach_dad": {
+        "src": "resources/preparing/украшение_отцовская_речь.mp4",
+        "title": "Ребята собрались украшать комнату. Под какую песню?",
+        "choices": [
+            {
+                "next_step": "preparing_with_nobody_run",
+                "text": "Смешарики. Погоня.",
+                "pic_src": ""
+            },
+            {
+                "next_step": "preparing_with_nobody_france",
+                "text": "Tour de France",
+                "pic_src": ""
+            },
+            {
+                "next_step": "preparing_with_nobody_love",
+                "text": "Сука любовь",
+                "pic_src": ""
+            },
+            {
+                "next_step": "preparing_with_nobody_childhood",
+                "text": "Юность",
+                "pic_src": ""
+            }
+        ],
+        "next_step": ""
+    },
+    "preparing_speach_mom": {
+        "src": "resources/preparing/украшение_добрая_речь.mp4",
+        "title": "Ребята собрались украшать комнату. Под какую песню?",
+        "choices": [
+            {
+                "next_step": "preparing_with_nobody_run",
+                "text": "Смешарики. Погоня.",
+                "pic_src": ""
+            },
+            {
+                "next_step": "preparing_with_nobody_france",
+                "text": "Tour de France",
+                "pic_src": ""
+            },
+            {
+                "next_step": "preparing_with_nobody_love",
+                "text": "Сука любовь",
+                "pic_src": ""
+            },
+            {
+                "next_step": "preparing_with_nobody_childhood",
+                "text": "Юность",
+                "pic_src": ""
+            }
+        ],
+        "next_step": ""
+    },
+    "preparing_speach_mom_not_work": {
+        "src": "resources/preparing/украшение_добрая_речь_не_сработала.mp4",
+        "title": "Какой метод убийства выбрать?",
+        "choices": [
+            {
+                "next_step": "preparing_corn",
+                "text": "Отравить кукурузой",
+                "pic_src": ""
+            },
+            {
+                "next_step": "preparing_knife",
+                "text": "Устроить резню",
+                "pic_src": ""
+            }
+        ],
+        "next_step": ""
+    },
+
+    "preparing_corn": {
+        "src": "resources/preparing/украшения_договариваются_готово.mp4",
+        "title": "Ребята собрались украшать комнату. Под какую песню?",
+        "choices": [
+            {
+                "next_step": "preparing_corn_run",
+                "text": "Смешарики. Погоня.",
+                "pic_src": ""
+            },
+            {
+                "next_step": "preparing_corn_france",
+                "text": "Tour de France",
+                "pic_src": ""
+            },
+            {
+                "next_step": "preparing_corn_love",
+                "text": "Сука любовь",
+                "pic_src": ""
+            },
+            {
+                "next_step": "preparing_corn_childhood",
+                "text": "Юность",
+                "pic_src": ""
+            }
+        ],
+        "next_step": ""
+    },
+
+    "preparing_knife": {
+        "src": "resources/preparing/украшения_договариваются_готово.mp4",
+        "title": "Ребята собрались украшать комнату. Под какую песню?",
+        "choices": [
+            {
+                "next_step": "preparing_knife_run",
+                "text": "Смешарики. Погоня.",
+                "pic_src": ""
+            },
+            {
+                "next_step": "preparing_knife_france",
+                "text": "Tour de France",
+                "pic_src": ""
+            },
+            {
+                "next_step": "preparing_knife_love",
+                "text": "Сука любовь",
+                "pic_src": ""
+            },
+            {
+                "next_step": "preparing_knife_childhood",
+                "text": "Юность",
+                "pic_src": ""
+            }
+        ],
+        "next_step": ""
+    },
+
+
+
+
+
+    "preparing_with_nobody_run": {
+        "src": "resources/preparing/украшение_смешарики_живы.mp4",
+        "title": "",
+        "choices": [],
+        "next_step": "congrats_with_nobody"
+    },
+    "preparing_with_nobody_france": {
+        "src": "resources/preparing/украшение_франс_живы.mp4",
+        "title": "",
+        "choices": [],
+        "next_step": "congrats_with_nobody"
+    },
+    "preparing_with_nobody_love": {
+        "src": "resources/preparing/украшение_любовь_живы.mp4",
+        "title": "",
+        "choices": [],
+        "next_step": "congrats_with_nobody"
+    },
+    "preparing_with_nobody_childhood": {
+        "src": "resources/preparing/украшение_юность_живы.mp4",
+        "title": "",
+        "choices": [],
+        "next_step": "congrats_with_nobody"
+    },
+
+    "preparing_corn_run": {
+        "src": "resources/preparing/украшение_смешарики_кукуруза.mp4",
+        "title": "",
+        "choices": [],
+        "next_step": "congrats_with_both"
+    },
+    "preparing_corn_france": {
+        "src": "resources/preparing/украшение_франс_кукуруза.mp4",
+        "title": "",
+        "choices": [],
+        "next_step": "congrats_with_both"
+    },
+    "preparing_corn_love": {
+        "src": "resources/preparing/украшение_любовь_кукуруза.mp4",
+        "title": "",
+        "choices": [],
+        "next_step": "congrats_with_both"
+    },
+    "preparing_corn_childhood": {
+        "src": "resources/preparing/украшение_юность_кукуруза.mp4",
+        "title": "",
+        "choices": [],
+        "next_step": "congrats_with_both"
+    },
+
+    "preparing_knife_run": {
+        "src": "resources/preparing/украшение_смешарики_нож.mp4",
+        "title": "",
+        "choices": [],
+        "next_step": "congrats_with_both"
+    },
+    "preparing_knife_france": {
+        "src": "resources/preparing/украшение_франс_нож.mp4",
+        "title": "",
+        "choices": [],
+        "next_step": "congrats_with_both"
+    },
+    "preparing_knife_love": {
+        "src": "resources/preparing/украшение_любовь_нож.mp4",
+        "title": "",
+        "choices": [],
+        "next_step": "congrats_with_both"
+    },
+    "preparing_knife_childhood": {
+        "src": "resources/preparing/украшение_юность_нож.mp4",
+        "title": "",
+        "choices": [],
+        "next_step": "congrats_with_both"
+    },
+
+
+
+
+    "congrats_with_nobody": {
+        "src": "resources/congrats/поздравление_карточки_дружно.mp4",
+        "title": "Выберите карточку: как друзья поздравили марину",
+        "choices": [
+            {
+                "next_step": "congrats_happy",
+                "text": "",
+                "pic_src": "resources/cards/карточка_мы_тебя_любим.jpg"
+            },
+            {
+                "next_step": "congrats_happy",
+                "text": "",
+                "pic_src": "resources/cards/карточка_с_тортом.jpg"
+            }
+        ],
+        "next_step": ""
+    },
+
+    "congrats_happy": {
+        "src": "resources/congrats/поздравление_все_хорошо.mp4",
+        "title": "С Днем Рождения! Конец!",
+        "choices": [],
+        "next_step": ""
+    },
+
+    "congrats_with_both": {
+        "src": "resources/congrats/поздравление_карточки_пиздец.mp4",
+        "title": "Выберите карточку: как друзья поздравили марину",
+        "choices": [
+            {
+                "next_step": "congrats_story",
+                "text": "",
+                "pic_src": "resources/cards/карточка_арина_арсен.jpg"
+            },
+            {
+                "next_step": "congrats_marry",
+                "text": "",
+                "pic_src": "resources/cards/карточка_арсен_сумасшедший.jpg"
+            }
+        ],
+        "next_step": ""
+    },
+
+    "congrats_story": {
+        "src": "resources/congrats/поздравление_ждут_марину.mp4",
+        "title": "Кто расскажет историю?",
+        "choices": [
+            {
+                "next_step": "congrats_story_arsen",
+                "text": "Арсен",
+                "pic_src": ""
+            },
+            {
+                "next_step": "congrats_story_arine",
+                "text": "Арина",
+                "pic_src": ""
+            }
+        ],
+        "next_step": ""
+    },
+
+    "congrats_story_arsen": {
+        "src": "resources/congrats/поздравление_арсен_история.mp4",
+        "title": "С Днем Рождения! Конец!",
+        "choices": [],
+        "next_step": ""
+    },
+    "congrats_story_arine": {
+        "src": "resources/congrats/поздравление_арина_история.mp4",
+        "title": "С Днем Рождения! Конец!",
+        "choices": [],
+        "next_step": ""
+    },
+
+
+    "congrats_marry": {
+        "src": "resources/congrats/поздравление_мы_убили_друзей.mp4",
+        "title": "Как отреагировать Арсену?",
+        "choices": [
+            {
+                "next_step": "congrats_marry_arsen",
+                "text": "Психануть",
+                "pic_src": ""
+            },
+            {
+                "next_step": "congrats_marry_both",
+                "text": "Спокойно",
+                "pic_src": ""
+            }
+        ],
+        "next_step": ""
+    },
+
+    "congrats_marry_arsen": {
+        "src": "resources/congrats/поздравление_один.mp4",
+        "title": "Ты согласна?",
+        "choices": [
+            {
+                "next_step": "congrats_marry_happy",
+                "text": "Да! Конечно да!",
+                "pic_src": ""
+            },
+            {
+                "next_step": "congrats_marry_dead",
+                "text": "Нет, ты чудовище!",
+                "pic_src": ""
+            }
+        ],
+        "next_step": ""
+    },
+    "congrats_marry_both": {
+        "src": "resources/congrats/поздравление_ничего_не_исправишь.mp4",
+        "title": "С Днем Рождения! Конец!",
+        "choices": [],
+        "next_step": ""
+    },
+
+    "congrats_marry_happy": {
+        "src": "resources/congrats/поздравление_один_согласна.mp4",
+        "title": "С Днем Рождения! Будьте счастливы! Конец!",
+        "choices": [],
+        "next_step": ""
+    },
+    "congrats_marry_dead": {
+        "src": "resources/congrats/поздравление_один_отказ.mp4",
+        "title": "С Днем Рождения! Ты умерла( Конец!",
+        "choices": [],
+        "next_step": ""
+    }
 }
