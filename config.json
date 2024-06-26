@@ -35,7 +35,7 @@
             {
                 "next_step": "gether_arsen",
                 "text": "Спящий Арсен",
-                "pic_src": "https://smirars.github.io/For_Marinochka/resources/cards/карточка_арсен_спящий.jpg"
+                "pic_src": "resources/arsen.png"
             }
         ],
         "next_step": ""
@@ -672,13 +672,13 @@
         "next_step": "gift_ideas_cards_conf_arsen"
     },
     "congrats_from_sister_conf_arine": {
-        "src": "resources/discussion/поздравление_мамы.mp4",
+        "src": "resources/discussion/поздравление_сестры.mp4",
         "title": "",
         "choices": [],
         "next_step": "gift_ideas_cards_conf_arsen"
     },
     "congrats_from_friend_conf_arine": {
-        "src": "resources/discussion/поздравление_мамы.mp4",
+        "src": "resources/discussion/поздравление_подруги.mp4",
         "title": "",
         "choices": [],
         "next_step": "gift_ideas_cards_conf_arsen"
