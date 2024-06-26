@@ -35,7 +35,7 @@
             {
                 "next_step": "gether_arsen",
                 "text": "Спящий Арсен",
-                "pic_src": "resources/arsen.jpg"
+                "pic_src": "resources/cards/карточка_арсен_спит.jpg"
             }
         ],
         "next_step": ""
@@ -52,7 +52,7 @@
             {
                 "next_step": "gether_arsen",
                 "text": "Спящий Арсен",
-                "pic_src": "resources/arsen.jpg"
+                "pic_src": "resources/cards/карточка_арсен_спит.jpg"
             }
         ],
         "next_step": ""
@@ -69,7 +69,7 @@
             {
                 "next_step": "gether_arsen",
                 "text": "Спящий Арсен",
-                "pic_src": "resources/arsen.jpg"
+                "pic_src": "resources/cards/карточка_арсен_спит.jpg"
             }
         ],
         "next_step": ""
