@@ -169,7 +169,7 @@ const videoController = {
     },
 
     setVideoSrc: function(src) {
-        if (stepController.config.local)
+        if (stepController.local)
             this.player.src({ type: 'application/x-mpegURL', src: "local_" + src });
         else
             this.player.src({ type: 'video/mp4', src: src });
