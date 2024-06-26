@@ -47,8 +47,13 @@ const stepController = {
         console.log("previusStep:", this.stepStack)
         this.stepStack.pop();
         if (this.stepStack.length > 0) {
+
             this.nextStep(this.stepStack.pop());
-            videoController.setVideoToHalfSecondBeforeEnd()
+            videoController.player.ready(function() { 
+                videoController.player.pause()
+                overlayController.show();
+            });
+            
         } else {
             this.nextStep(this.config.initial_step);
         }
