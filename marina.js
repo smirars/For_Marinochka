@@ -70,6 +70,7 @@ const stepController = {
                 stepController.previusStep()
             };
             videoPlayer.appendChild(overlayController.overlay);
+            videoController.setPoster(this.config.poster_src);
             this.nextStep(this.config.initial_step, true)
         })
         .catch(error => {
@@ -173,6 +174,10 @@ const videoController = {
             this.player.src({ type: 'application/x-mpegURL', src: "local_" + src });
         else
             this.player.src({ type: 'video/mp4', src: src });
+    },
+
+    setPoster: function(src) {        
+        videoController.player.poster(src);
     },
     
     playVideo: function() {

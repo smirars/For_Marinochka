@@ -1,5 +1,6 @@
 {
     "initial_step": "dream_start",
+    "poster_src": "resources/img/poster.png",
     "dream_start": {
         "src": "resources/dream/сон_начало.mp4",
         "title": "Как поступить Ксюше?",
