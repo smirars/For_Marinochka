@@ -169,9 +169,7 @@ const videoController = {
 
     setVideoToHalfSecondBeforeEnd: function() {
         const duration = this.player.duration();
-        if (duration > 0.5) {
-            this.player.currentTime(duration - 0.5);
-        }
+        this.player.currentTime(duration - 1);
     },
 
     setVideoSrc: function(src) {
