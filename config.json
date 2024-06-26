@@ -669,19 +669,19 @@
         "src": "resources/discussion/поздравление_мамы.mp4",
         "title": "",
         "choices": [],
-        "next_step": "gift_ideas_cards_conf_arsen"
+        "next_step": "gift_ideas_cards_conf_arine"
     },
     "congrats_from_sister_conf_arine": {
         "src": "resources/discussion/поздравление_сестры.mp4",
         "title": "",
         "choices": [],
-        "next_step": "gift_ideas_cards_conf_arsen"
+        "next_step": "gift_ideas_cards_conf_arine"
     },
     "congrats_from_friend_conf_arine": {
         "src": "resources/discussion/поздравление_подруги.mp4",
         "title": "",
         "choices": [],
-        "next_step": "gift_ideas_cards_conf_arsen"
+        "next_step": "gift_ideas_cards_conf_arine"
     },
     "discussion_arine_and_arsen_conflict": {
         "src": "resources/discussion/спор_арина.mp4",
@@ -2203,12 +2203,12 @@
         "title": "Выберите, что произойдет",
         "choices": [
             {
-                "next_step": "store_courier_with_both_sneeze",
+                "next_step": "store_courier_with_arine_sneeze",
                 "text": "Курьер чихнет",
                 "pic_src": ""
             },
             {
-                "next_step": "store_courier_with_both_rap",
+                "next_step": "store_courier_with_arine_rap",
                 "text": "Курьер зачитает реп",
                 "pic_src": ""
             }
