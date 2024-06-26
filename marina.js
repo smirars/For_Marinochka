@@ -1,6 +1,7 @@
 
 const stepController = {
     configName: "config.json",
+    local: false,
     stepStack: [],
     config: null,
 
@@ -168,7 +169,10 @@ const videoController = {
     },
 
     setVideoSrc: function(src) {
-        this.player.src({ type: 'application/x-mpegURL', src: src });
+        if (stepController.config.local)
+            this.player.src({ type: 'application/x-mpegURL', src: "local_" + src });
+        else
+            this.player.src({ type: 'video/mp4', src: src });
     },
     
     playVideo: function() {
